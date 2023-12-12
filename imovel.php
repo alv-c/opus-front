@@ -325,7 +325,7 @@
             </div>
             <div class="right">
                 <div class="sub sub-left">
-                     <!-- openModalSlickInline(ID_MEDIDA) -->
+                    <!-- openModalSlickInline(ID_MEDIDA) -->
                     <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(1)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -427,40 +427,37 @@
             </div>
         </div>
         <div class="contain-carrossel">
-
             <!-- CARROSSEL SWIPER -->
-            <div class="swiper swipe-galeria" id="my-gallery">
-                <ul class="swiper-wrapper" itemscope itemtype="http://schema.org/ImageGallery">
-                    <!-- Slide -->
-                    <li id="slide_1" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <!-- IMAGEM ANCORA 1216x480 -->
-                        <a itemprop="contentUrl" href="./img/imovel/img-carrossel.png" data-pswp-width="1216" data-pswp-height="480" target="_blank">
-                            <img src="./img/imovel/img-carrossel.png" alt="" itemprop="thumbnail" alt="Imóvel Opus" />
-                        </a>
-                    </li>
-                    <!-- Slide -->
-                    <li id="slide_2" class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <!-- IMAGEM ANCORA 1216x480 -->
-                        <a itemprop="contentUrl" href="./img/imovel/img-carrossel.png" data-pswp-width="1216" data-pswp-height="480" target="_blank">
-                            <img src="./img/imovel/img-carrossel.png" alt="" itemprop="thumbnail" alt="Imóvel Opus" />
-                        </a>
-                    </li>
-                </ul>
-                <!-- Botoes de navegacao -->
-                <div class="contain-btn-carrossel">
-                    <button class="btn-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-                            <path d="M8.33333 17.3332L0 8.99984L8.33333 0.666504L9.8125 2.14567L2.95833 8.99984L9.8125 15.854L8.33333 17.3332Z" fill="#1C1B1F" />
-                        </svg>
-                    </button>
-                    <button class="btn-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-                            <path d="M1.68766 17.3332L0.208496 15.854L7.06266 8.99984L0.208496 2.14567L1.68766 0.666504L10.021 8.99984L1.68766 17.3332Z" fill="#1C1B1F" />
-                        </svg>
-                    </button>
-                </div>
+            <div class="my-gallery slider-main-2" itemscope itemtype="http://schema.org/ImageGallery">
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="item-slick">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                        <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                        <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                        <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
+                    </a>
+                </figure>
             </div>
-
+        </div>
+        <!-- Botoes de navegacao -->
+        <div class="contain-btn-carrossel">
+            <button class="btn-prev-carrossel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                    <path d="M8.33333 17.3332L0 8.99984L8.33333 0.666504L9.8125 2.14567L2.95833 8.99984L9.8125 15.854L8.33333 17.3332Z" fill="#1C1B1F" />
+                </svg>
+            </button>
+            <button class="btn-next-carrossel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                    <path d="M1.68766 17.3332L0.208496 15.854L7.06266 8.99984L0.208496 2.14567L1.68766 0.666504L10.021 8.99984L1.68766 17.3332Z" fill="#1C1B1F" />
+                </svg>
+            </button>
         </div>
     </div>
 </section>
@@ -533,16 +530,65 @@
 
     </div>
 </section>
-<!-- <section class="imovel-estagio" id="imovel-estagio">
+<section class="imovel-estagio" id="imovel-estagio" style="border: 2px solid lime; padding: 100px 0;">
     <div class="container">
-        <div class="contain-titulo">
-            <span class="titulo">Estágio da obra</span>
-            <button type="button">
-                fudeu
-            </button>
+
+        <div class="top">
+            <span class="titulo d-block">Estágio da obra</span>
+            <div class="dropdown">
+                <button class="drop-filter-slick" type="button" id="dropdown-filtro-estagio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Setembro 2023</span>
+                    <div class="ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <path d="M4.08154 7.08154L0.546822 0.959229L7.61626 0.959229L4.08154 7.08154Z" fill="black" />
+                        </svg>
+                    </div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdown-filtro-estagio">
+                    <button type="button" data-filter="black" class="filtro-slick dropdown-item">black</button>
+                    <button type="button" data-filter="red" class="filtro-slick dropdown-item">Red</button>
+                    <button type="button" data-filter="yellow" class="filtro-slick dropdown-item">Yellow</button>
+                    <button type="button" data-filter="blue" class="filtro-slick dropdown-item">Blue</button>
+                    <button type="button" data-filter="all" class="filtro-slick dropdown-item">All</button>
+                </div>
+            </div>
         </div>
+
+
+        <div class="my-gallery slider-main" itemscope itemtype="http://schema.org/ImageGallery">
+
+
+            <!-- VIDEO YOUTUBE -->
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="black">
+                <a class="ancor-slick-filter" href="#" data-type="video" data-size="1200x1800" data-video='<div class="wrapper"><div class="video-wrapper"><iframe class="pswp__video" width="960" height="640" src="https://www.youtube.com/embed/T9f8Ml8iJao" frameborder="0" allowfullscreen></iframe></div></div>'></a>
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="red">
+                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="yellow">
+                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="blue">
+                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+
+        </div>
+
+
     </div>
-</section> -->
+</section>
 <section class="imovel-produtos-similares" id="imovel-produtos-similares">
     <div class="container">
         <span class="titulo">Produtos similares</span>
@@ -604,7 +650,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="cartao">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">

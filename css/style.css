@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
 @font-face {
   font-family: grotesk;
   src: url("./../font/grotesk/AktivGrotesk_Trial_Lt.ttf");
@@ -2398,6 +2402,14 @@ section.imovel-carrossel div.contain-titulo div.contain-btns button.tour {
   border: 1px solid #D3D3D3;
   color: #231F20;
 }
+section.imovel-carrossel div.contain-carrossel div.my-gallery {
+  width: 100%;
+}
+section.imovel-carrossel div.contain-carrossel div.my-gallery figure a img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
 section.imovel-carrossel div.contain-btn-carrossel {
   display: flex;
   justify-content: center;
@@ -2460,6 +2472,89 @@ section.imovel-diferenciais div#acordeom-diferenciais div.acordeom-diferenciais-
   section.imovel-diferenciais div#acordeom-diferenciais div.acordeom-diferenciais-item div.contain button.btn-acordeom-dif span {
     font-size: 18px;
   }
+}
+section.imovel-estagio div.top {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+@media (min-width: 576px) {
+  section.imovel-estagio div.top {
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 992px) {
+  section.imovel-estagio div.top {
+    padding-bottom: 80px;
+  }
+}
+section.imovel-estagio div.top span.titulo {
+  color: #231F20;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36.4px;
+}
+@media (min-width: 576px) {
+  section.imovel-estagio div.top span.titulo {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+section.imovel-estagio div.top div.dropdown button.drop-filter-slick {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 60px;
+  border: 1px solid #D3D3D3;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px 9px 24px;
+  gap: 20px;
+}
+section.imovel-estagio div.top div.dropdown button.drop-filter-slick span {
+  display: block;
+  color: #231F20;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  letter-spacing: 0.84px;
+}
+section.imovel-estagio div.top div.dropdown button.drop-filter-slick div.ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 3px;
+}
+section.imovel-estagio div.my-gallery div.slick-track figure {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  section.imovel-estagio div.my-gallery div.slick-track figure {
+    max-width: 380px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  section.imovel-estagio div.my-gallery div.slick-track figure {
+    padding-right: 40px;
+  }
+}
+section.imovel-estagio div.my-gallery div.slick-track figure a.ancor-slick-filter {
+  display: block;
+  width: 100%;
+}
+section.imovel-estagio div.my-gallery div.slick-track figure img {
+  display: block;
+  max-width: 100%;
 }
 section.imovel-produtos-similares {
   padding: 70px 0 80px;
@@ -2861,7 +2956,7 @@ section.linha-tempo fieldset.contain-btn-mobille button.btn-filter-mobille {
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  padding: 12px 24px 7px 24px;
+  padding: 12px 24px 9px 24px;
   background: #fff;
   border-radius: 60px;
   border: 1px solid #D3D3D3;
@@ -2967,6 +3062,89 @@ section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom 
 section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom span.nome {
   font-size: 18px;
   font-weight: 600;
+}
+
+/********* TRABALHE CONOSCO **********/
+section.primaria {
+  border: 2px solid red;
+}
+section.primaria div.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 992px) {
+  section.primaria div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section.primaria div.grid div.left {
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  section.primaria div.grid div.left {
+    padding-right: 115px;
+  }
+}
+section.primaria div.grid div.left span {
+  display: block;
+}
+section.primaria div.grid div.left span.titulo {
+  font-size: 30px;
+  color: #231F20;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 53.2px;
+  padding-bottom: 30px;
+}
+@media (min-width: 576px) {
+  section.primaria div.grid div.left span.titulo {
+    font-size: 38px;
+  }
+}
+section.primaria div.grid div.left span.desc {
+  color: #231F20;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25.6px;
+  padding-bottom: 20px;
+}
+section.primaria div.grid div.left span.contato {
+  color: #585858;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+section.primaria div.grid div.left span.contato .destaque {
+  display: inline;
+  font-weight: 700;
+}
+section.primaria div.grid div.right {
+  border: 2px solid red;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  section.primaria div.grid div.right {
+    padding-left: 115px;
+  }
+}
+section.primaria div.grid div.right fieldset {
+  border: 1px solid cyan;
+}
+section.primaria div.grid div.right fieldset .form-trabalhe-conosco {
+  display: block;
+  width: 100%;
+  background: #fff;
+  outline: none;
+  padding: 10px 5px 7px;
+  margin-bottom: 20px;
+  color: #585858;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
