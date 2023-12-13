@@ -804,3 +804,51 @@ div#dynamicVideoModal {
         }
     }
 }
+
+// SETAS SLICK CAROUSEL
+.contain-btn-carrossel {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 40px;
+    flex-wrap: nowrap;
+
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &.btn-prev {}
+
+        &.btn-next {}
+    }
+}
+
+.wrapper {
+    height: 100%;
+
+    .video-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .pswp__video {
+            display: block;
+            margin: 0 auto !important;
+            width: 100%;
+            max-width: 750px;
+            height: 280px;
+        
+            @media (min-width: 576px) {
+                height: 330px;
+            }
+            
+            @media (min-width: 992px) {
+                height: 360px;
+            }
+        
+        }
+    }
+}

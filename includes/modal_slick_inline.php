@@ -25,15 +25,30 @@
             <div class="modal-body">
                 <div class="wrap-modal-slider">
                     <div class="container-slick-modal">
-                        <div data-id="1" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="./img/imovel/img-modal-exemplo.png" alt=""></div>
-                        <div data-id="1" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="1" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="2" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="2" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="2" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="3" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="3" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
-                        <div data-id="3" class="contain-img-modal-slick-inline"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></div>
+                        <!-- NA TAG FIGURE DEVE CONTER UMA CLASSE QUE REMETE O DATA-FILTER DOS BOTOES DE ACIONAMENTO DO MODAL -->
+                        <figure class="contain-img-modal-slick-inline 1" style="border: 2px solid red !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="./img/imovel/img-modal-exemplo.png" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 1" style="border: 2px solid red !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 1" style="border: 2px solid red !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        
+                        <figure class="contain-img-modal-slick-inline 2" style="border: 2px solid cyan !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 2" style="border: 2px solid cyan !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 2" style="border: 2px solid cyan !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        
+                        <figure class="contain-img-modal-slick-inline 3" style="border: 2px solid lime !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 3" style="border: 2px solid lime !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 3" style="border: 2px solid lime !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+
+                        <figure class="contain-img-modal-slick-inline 4" style="border: 2px solid yellowgreen !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 4" style="border: 2px solid yellowgreen !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 4" style="border: 2px solid yellowgreen !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+
+                        <figure class="contain-img-modal-slick-inline 5" style="border: 2px solid purple !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 5" style="border: 2px solid purple !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 5" style="border: 2px solid purple !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+
+                        <figure class="contain-img-modal-slick-inline 6" style="border: 2px solid orangered !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 6" style="border: 2px solid orangered !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
+                        <figure class="contain-img-modal-slick-inline 6" style="border: 2px solid orangered !important;"><img class="d-block mx-auto img-fluid img-modal-slick-inline" src="http://via.placeholder.com/636x300" alt=""></figure>
                     </div>
                 </div>
             </div>

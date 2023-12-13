@@ -642,6 +642,46 @@ div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-moda
   max-width: 486px;
 }
 
+.contain-btn-carrossel {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+.contain-btn-carrossel button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.wrapper {
+  height: 100%;
+}
+.wrapper .video-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .video-wrapper .pswp__video {
+  display: block;
+  margin: 0 auto !important;
+  width: 100%;
+  max-width: 750px;
+  height: 280px;
+}
+@media (min-width: 576px) {
+  .wrapper .video-wrapper .pswp__video {
+    height: 330px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper .video-wrapper .pswp__video {
+    height: 360px;
+  }
+}
+
 /********* HOME **********/
 section.redirecionamento {
   padding: 55px 0 164px;
@@ -2410,19 +2450,6 @@ section.imovel-carrossel div.contain-carrossel div.my-gallery figure a img {
   max-width: 100%;
   object-fit: cover;
 }
-section.imovel-carrossel div.contain-btn-carrossel {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  gap: 40px;
-  flex-wrap: nowrap;
-}
-section.imovel-carrossel div.contain-btn-carrossel button {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 section.imovel-diferenciais {
   padding-bottom: 100px;
 }
@@ -2473,6 +2500,19 @@ section.imovel-diferenciais div#acordeom-diferenciais div.acordeom-diferenciais-
     font-size: 18px;
   }
 }
+section.imovel-estagio {
+  padding-bottom: 75px;
+}
+@media (min-width: 576px) {
+  section.imovel-estagio {
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 992px) {
+  section.imovel-estagio {
+    padding-bottom: 150px;
+  }
+}
 section.imovel-estagio div.top {
   display: flex;
   flex-wrap: nowrap;
@@ -2515,7 +2555,7 @@ section.imovel-estagio div.top div.dropdown button.drop-filter-slick {
   border: 1px solid #D3D3D3;
   outline: none;
   cursor: pointer;
-  padding: 12px 24px 9px 24px;
+  padding: 12px 24px 7px 24px;
   gap: 20px;
 }
 section.imovel-estagio div.top div.dropdown button.drop-filter-slick span {
@@ -2534,27 +2574,62 @@ section.imovel-estagio div.top div.dropdown button.drop-filter-slick div.ico {
   position: relative;
   bottom: 3px;
 }
-section.imovel-estagio div.my-gallery div.slick-track figure {
-  max-width: 100%;
+section.imovel-estagio div.contain-chart {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  justify-content: space-between;
+  padding-bottom: 60px;
+  gap: 40px;
+}
+@media (min-width: 500px) {
+  section.imovel-estagio div.contain-chart {
+    grid-template-columns: repeat(3, 100px);
+    gap: 40px;
+  }
 }
 @media (min-width: 768px) {
-  section.imovel-estagio div.my-gallery div.slick-track figure {
-    max-width: 380px;
-    padding-right: 30px;
+  section.imovel-estagio div.contain-chart {
+    grid-template-columns: repeat(6, 100px);
+    gap: 0;
   }
 }
-@media (min-width: 992px) {
-  section.imovel-estagio div.my-gallery div.slick-track figure {
-    padding-right: 40px;
-  }
-}
-section.imovel-estagio div.my-gallery div.slick-track figure a.ancor-slick-filter {
+section.imovel-estagio div.contain-chart div.item-chart div.chart {
   display: block;
-  width: 100%;
+  margin: 0 auto;
 }
-section.imovel-estagio div.my-gallery div.slick-track figure img {
+section.imovel-estagio div.contain-chart div.item-chart div.chart svg {
+  display: block;
+  margin: 0 auto !important;
+}
+section.imovel-estagio div.contain-chart div.item-chart span.desc {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  section.imovel-estagio div.my-gallery .slick-list {
+    margin: 0 -30px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  section.imovel-estagio div.my-gallery .slick-list div.slick-track figure.slick-slide {
+    margin: 0 30px 0 0;
+  }
+}
+section.imovel-estagio div.my-gallery .slick-list div.slick-track figure.slick-slide img {
   display: block;
   max-width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  section.imovel-estagio div.my-gallery .slick-list div.slick-track figure.slick-slide img {
+    width: 380px;
+  }
 }
 section.imovel-produtos-similares {
   padding: 70px 0 80px;

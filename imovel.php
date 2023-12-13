@@ -326,7 +326,7 @@
             <div class="right">
                 <div class="sub sub-left">
                     <!-- openModalSlickInline(ID_MEDIDA) -->
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(1)">
+                    <button type="button" data-filter="1" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -339,7 +339,7 @@
                         </div>
                         <span>116,73m² | 3 suítes</span>
                     </button>
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(2)">
+                    <button type="button" data-filter="2" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -352,7 +352,7 @@
                         </div>
                         <span>127m² | 3 suítes</span>
                     </button>
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(3)">
+                    <button type="button" data-filter="3" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -367,7 +367,7 @@
                     </button>
                 </div>
                 <div class="sub sub-right">
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(4)">
+                    <button type="button" data-filter="4" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -380,7 +380,7 @@
                         </div>
                         <span>100m² | 2 ou 3 suítes</span>
                     </button>
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(5)">
+                    <button type="button" data-filter="5" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -393,7 +393,7 @@
                         </div>
                         <span>130m² | 3 suítes</span>
                     </button>
-                    <button type="button" class="btn-modal-planta" onclick="openModalSlickInline(6)">
+                    <button type="button" data-filter="6" class="btn-modal-planta" onclick="openModalSlickInline(this)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -430,17 +430,17 @@
             <!-- CARROSSEL SWIPER -->
             <div class="my-gallery slider-main-2" itemscope itemtype="http://schema.org/ImageGallery">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1200x1800" itemprop="contentUrl">
+                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
@@ -448,12 +448,12 @@
         </div>
         <!-- Botoes de navegacao -->
         <div class="contain-btn-carrossel">
-            <button class="btn-prev-carrossel">
+            <button class="btn-prev-carrossel-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
                     <path d="M8.33333 17.3332L0 8.99984L8.33333 0.666504L9.8125 2.14567L2.95833 8.99984L9.8125 15.854L8.33333 17.3332Z" fill="#1C1B1F" />
                 </svg>
             </button>
-            <button class="btn-next-carrossel">
+            <button class="btn-next-carrossel-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
                     <path d="M1.68766 17.3332L0.208496 15.854L7.06266 8.99984L0.208496 2.14567L1.68766 0.666504L10.021 8.99984L1.68766 17.3332Z" fill="#1C1B1F" />
                 </svg>
@@ -530,9 +530,8 @@
 
     </div>
 </section>
-<section class="imovel-estagio" id="imovel-estagio" style="border: 2px solid lime; padding: 100px 0;">
+<section class="imovel-estagio" id="imovel-estagio">
     <div class="container">
-
         <div class="top">
             <span class="titulo d-block">Estágio da obra</span>
             <div class="dropdown">
@@ -545,48 +544,171 @@
                     </div>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdown-filtro-estagio">
-                    <button type="button" data-filter="black" class="filtro-slick dropdown-item">black</button>
-                    <button type="button" data-filter="red" class="filtro-slick dropdown-item">Red</button>
-                    <button type="button" data-filter="yellow" class="filtro-slick dropdown-item">Yellow</button>
-                    <button type="button" data-filter="blue" class="filtro-slick dropdown-item">Blue</button>
-                    <button type="button" data-filter="all" class="filtro-slick dropdown-item">All</button>
+                    <button type="button" data-filter="setembro-2023" class="filtro-slick dropdown-item">Setembro 2023</button>
+                    <button type="button" data-filter="outubro-2023" class="filtro-slick dropdown-item">Outubro 2023</button>
+                    <button type="button" data-filter="novembro-2023" class="filtro-slick dropdown-item">Novembro 2023</button>
+                    <button type="button" data-filter="dezembro-2023" class="filtro-slick dropdown-item">Dezembro 2023</button>
+                    <!-- <button type="button" data-filter="all" class="filtro-slick dropdown-item">Todos</button> -->
                 </div>
             </div>
         </div>
 
+        <div class="contain-chart">
 
-        <div class="my-gallery slider-main" itemscope itemtype="http://schema.org/ImageGallery">
+            <!----------------------------DATA-FILTER SETEMBRO 2023----------------------------------->
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Projetos</span>
+            </div>
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Fundação</span>
+            </div>
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Estrutura</span>
+            </div>
 
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Alvenaria </span>
+            </div>
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Instalações</span>
+            </div>
+            <div class="item-chart" data-filter="setembro-2023">
+                <div class="chart" data-size="81" data-value="10" data-arrow="down"></div>
+                <span class="desc">Acabamentos</span>
+            </div>
 
-            <!-- VIDEO YOUTUBE -->
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="black">
-                <a class="ancor-slick-filter" href="#" data-type="video" data-size="1200x1800" data-video='<div class="wrapper"><div class="video-wrapper"><iframe class="pswp__video" width="960" height="640" src="https://www.youtube.com/embed/T9f8Ml8iJao" frameborder="0" allowfullscreen></iframe></div></div>'></a>
-                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
-                </a>
-            </figure>
+            <!----------------------------DATA-FILTER OUTUBRO 2023----------------------------------->
 
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="red">
-                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
-                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
-                </a>
-            </figure>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Projetos</span>
+            </div>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Fundação</span>
+            </div>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Estrutura</span>
+            </div>
 
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="yellow">
-                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
-                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
-                </a>
-            </figure>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Alvenaria </span>
+            </div>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Instalações</span>
+            </div>
+            <div class="item-chart" data-filter="outubro-2023">
+                <div class="chart" data-size="81" data-value="20" data-arrow="down"></div>
+                <span class="desc">Acabamentos</span>
+            </div>
 
-            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="blue">
-                <a class="ancor-slick-filter" data-size="1200x1800" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
-                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
-                </a>
-            </figure>
+            <!----------------------------DATA-FILTER NOVEMBRO 2023----------------------------------->
 
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Projetos</span>
+            </div>
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Fundação</span>
+            </div>
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Estrutura</span>
+            </div>
 
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Alvenaria </span>
+            </div>
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Instalações</span>
+            </div>
+            <div class="item-chart" data-filter="novembro-2023">
+                <div class="chart" data-size="81" data-value="30" data-arrow="down"></div>
+                <span class="desc">Acabamentos</span>
+            </div>
+
+            <!----------------------------DATA-FILTER DEZEMBRO 2023----------------------------------->
+
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Projetos</span>
+            </div>
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Fundação</span>
+            </div>
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Estrutura</span>
+            </div>
+
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Alvenaria </span>
+            </div>
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Instalações</span>
+            </div>
+            <div class="item-chart" data-filter="dezembro-2023">
+                <div class="chart" data-size="81" data-value="40" data-arrow="down"></div>
+                <span class="desc">Acabamentos</span>
+            </div>
         </div>
 
+        <div class="my-gallery slider-main" itemscope itemtype="http://schema.org/ImageGallery">
+            <!-- IMPORTANTE -->
+            <!-- TAG <FIGURE> DEVE CONTER UM NOME DE CLASSE QUE REFLETE AO ATRIBUTO "DATA-FILTER" DOS BOTOES DE FILTRO -->
 
+            <!-- VIDEO YOUTUBE -->
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="setembro-2023">
+                <a class="ancor-slick-filter" href="#" data-type="video" data-size="700x400" data-video='<div class="wrapper"><div class="video-wrapper"><iframe class="pswp__video" width="960" height="640" src="https://www.youtube.com/embed/T9f8Ml8iJao" frameborder="0" allowfullscreen></iframe></div></div>'></a>
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="outubro-2023">
+                <a class="ancor-slick-filter" data-size="700x400" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="novembro-2023">
+                <a class="ancor-slick-filter" data-size="700x400" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="dezembro-2023">
+                <a class="ancor-slick-filter" data-size="700x400" href="./img/imovel/slick-img-galeria-1.png" itemprop="contentUrl">
+                    <img src="./img/imovel/slick-img-galeria-1.png" itemprop="thumbnail" alt="Image description" />
+                </a>
+            </figure>
+        </div>
+        <!-- Botoes de navegacao -->
+        <div class="contain-btn-carrossel">
+            <button class="btn-prev-carrossel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                    <path d="M8.33333 17.3332L0 8.99984L8.33333 0.666504L9.8125 2.14567L2.95833 8.99984L9.8125 15.854L8.33333 17.3332Z" fill="#1C1B1F" />
+                </svg>
+            </button>
+            <button class="btn-next-carrossel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                    <path d="M1.68766 17.3332L0.208496 15.854L7.06266 8.99984L0.208496 2.14567L1.68766 0.666504L10.021 8.99984L1.68766 17.3332Z" fill="#1C1B1F" />
+                </svg>
+            </button>
+        </div>
     </div>
 </section>
 <section class="imovel-produtos-similares" id="imovel-produtos-similares">
