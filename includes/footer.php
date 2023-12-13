@@ -528,9 +528,11 @@
             }, 1500);
         });
 
-        //***************************** MODAL SLICK INLINE *************************/
 
+        //***************************** MODAL SLICK INLINE *************************/
         let openModalSlickInline = (component) => {
+            $('.container-slick-modal').show()
+
             $('.container-slick-modal').slick({
                 dots: false,
                 arrows: false,
@@ -541,17 +543,70 @@
             $(".container-slick-modal").slick('slickUnfilter');
             $(".container-slick-modal").slick('slickFilter', `.${filtro}`);
             $('#modal-slick-inline').modal('show');
+
+            let label = component.children[1].innerHTML
+            $('#titulo-modal-slick-inline').html(label)
         }
 
         let closeModalSlickInline = () => {
+            $('.container-slick-modal').hide()
             $(".container-slick-modal").slick('slickUnfilter');
             $('.container-slick-modal').slick('unslick');
-            $('#modal-slick-inline').modal('hide');
+
+            setTimeout(function() {
+                $('#modal-slick-inline').modal('hide');
+            }, 1000);
+            $('#modal-slick-inline').data('bs.modal',null);
         }
 
         $('#modal-slick-inline').on('shown.bs.modal', function(e) {
             $('.container-slick-modal').slick('setPosition');
             $('.wrap-modal-slider').addClass('open');
+        })
+
+
+        //***************************** MODAL SLICK INLINE IMGS *************************/
+        let openModalSlickInlineImgs = () => {
+            $('.container-slick-modal-imgs').show();
+            $('.slider-nav-modal-imgs').show();
+
+            $('.container-slick-modal-imgs').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                infinite: false,
+                asNavFor: '.slider-nav-modal-imgs'
+            });
+
+            $('.slider-nav-modal-imgs').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                asNavFor: '.container-slick-modal-imgs',
+                centerMode: true,
+                focusOnSelect: true,
+                infinite: false,
+            });
+
+            $('#modal-slick-inline-imgs').modal('show');
+        }
+
+        let closeModalSlickInlineImgs = () => {
+            $('.container-slick-modal-imgs').hide();
+            $('.slider-nav-modal-imgs').hide();
+
+            $('.container-slick-modal-imgs').slick('unslick');
+            $('.slider-nav-modal-imgs').slick('unslick');
+            
+            setTimeout(function() {
+                $('#modal-slick-inline-imgs').modal('hide');
+            }, 1000);
+            $('#modal-slick-inline-imgs').data('bs.modal',null);
+        }
+
+        $('#modal-slick-inline-imgs').on('shown.bs.modal', function(e) {
+            $('.container-slick-modal-imgs').slick('setPosition');
+            $('.wrap-modal-slider-imgs').addClass('open');
         })
     </script>
 

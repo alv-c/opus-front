@@ -1,6 +1,7 @@
 <?php require_once "./includes/navbar.php"; ?>
 <?php require_once "./includes/modal_video.php"; ?>
 <?php require_once "./includes/modal_slick_inline.php"; ?>
+<?php require_once "./includes/modal_slick_inline_imgs.php"; ?>
 
 <section>
     <div class="container">
@@ -295,7 +296,7 @@
     <div class="container">
         <div class="contain-titulo">
             <span class="titulo">Imagens</span>
-            <button type="button" class="ver-galeria-imgs">Ver galeria</button>
+            <button type="button" class="ver-galeria-imgs" onclick="openModalSlickInlineImgs()">Ver galeria</button>
         </div>
         <div class="galeria-grid">
             <div class="grid-item left">
