@@ -73,12 +73,16 @@
 <section class="linha-tempo">
     <div class="container">
         <span class="titulo">Linha do tempo</span>
+    </div>
         <fieldset class="contain-btn-desktop">
-            <button type="button" class="btn-linha-tempo active" onclick="disabledBtnFilterLinhaTempo(this, 2007, true)">2007</button>
-            <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2008, true)">2008</button>
-            <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2009, true)">2009</button>
-            <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2010, true)">2010</button>
+            <div class="container">
+                <button type="button" class="btn-linha-tempo active" onclick="disabledBtnFilterLinhaTempo(this, 2007, true)">2007</button>
+                <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2008, true)">2008</button>
+                <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2009, true)">2009</button>
+                <button type="button" class="btn-linha-tempo" onclick="disabledBtnFilterLinhaTempo(this, 2010, true)">2010</button>
+            </div>
         </fieldset>
+    <div class="container">
         <fieldset class="contain-btn-mobille">
             <div class="dropdown">
                 <button class="btn-filter-mobille" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -172,7 +176,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2008</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -185,7 +189,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2008</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -198,7 +202,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2008</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -211,7 +215,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2008</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -229,7 +233,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2009</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -242,7 +246,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2009</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -255,7 +259,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2009</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>
@@ -268,7 +272,7 @@
                     </div>
                     <div class="bottom">
                         <span class="nome">Twenty Five Park</span>
-                        <span class="lancamento">Lançamento em 2007</span>
+                        <span class="lancamento">Lançamento em 2009</span>
                         <span class="entrega">Entrega 2011</span>
                     </div>
                 </div>

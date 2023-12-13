@@ -28,14 +28,14 @@
         </div>
     </div>
 </section>
-<section class="primaria">
+<section class="trabalho-conosco-primaria">
     <div class="container">
         <div class="grid">
             <div class="left">
                 <span class="titulo">Trabalhe conosco</span>
                 <span class="desc">
-                    Se você deseja se juntar ao nosso time, associando seus talentos e competências 
-                    a uma empresa líder no segmento e com ótimas perspectivas de crescimento, 
+                    Se você deseja se juntar ao nosso time, associando seus talentos e competências
+                    a uma empresa líder no segmento e com ótimas perspectivas de crescimento,
                     entre em contato no campo abaixo e anexe o seu currículo
                 </span>
                 <span class="contato">
@@ -43,20 +43,68 @@
                 </span>
             </div>
             <div class="right">
-                <fieldset>
-                    <input type="text" name="nome" class="form-trabalhe-conosco" placeholder="Nome completo" required>
-                    <input type="email" name="email" class="form-trabalhe-conosco" placeholder="E-mail" required>
-                    <input type="text" name="telefone" class="form-trabalhe-conosco" placeholder="Telefone" required>
-                    <select name="modalidade" class="form-trabalhe-conosco" required>
-                        <option hidden>Modalidade de contratação</option>
-                        <option value="1">Modalidade 1</option>
-                        <option value="2">Modalidade 1</option>
-                    </select>
+                <fieldset class="contain-form-trabalhe-conosco">
+                    <form action="#" method="post">
+                        <input type="text" name="nome" class="input-trabalhe-cns" placeholder="Nome completo" required>
+                        <input type="email" name="email" class="input-trabalhe-cns" placeholder="E-mail" required>
+                        <input type="text" name="telefone" class="input-trabalhe-cns" placeholder="Telefone" required>
+
+                        <select name="modalidadeContratacao" class="select-trabalhe-cns" required>
+                            <option value="1">Modalidade 1</option>
+                            <option value="2">Modalidade 2</option>
+                            <option value="3">Modalidade 3</option>
+                        </select>
+                        <select name="areaInteresse" class="select-trabalhe-cns" required>
+                            <option hidden>Área de interesse</option>
+                            <option value="1">Área 1</option>
+                            <option value="2">Área 2</option>
+                            <option value="3">Área 3</option>
+                        </select>
+                        <div class="contain-file">
+                            <input type="file" name="curriculo" id="input-curriculo" hidden="hidden">
+                            <span id="custom-text">Anexar seu currículo</span>
+                            <button type="button" id="custom-button">Selecione o arquivo</button>
+                        </div>
+                        <div class="contain-input-termo">
+                            <div class="input">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                    <label class="custom-control-label" for="customControlInline">Declaro que li e estou de acordo com os termos da política de privacidade.</label>
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="contain-btn-submit">
+                            <button type="submit" class="submit-trabalhe-cns">Enviar mensagem</button>
+                        </div>
+
+                    </form>
                 </fieldset>
             </div>
         </div>
     </div>
 </section>
 
+<script>
+    // CONTROLADOR INPUT FILE
+    const realFileBtn = document.getElementById("input-curriculo");
+    const customBtn = document.getElementById("custom-button");
+    const customTxt = document.getElementById("custom-text");
 
-<?php //require_once "./includes/footer.php"; ?>
+    customBtn.addEventListener("click", function() {
+        realFileBtn.click();
+    });
+
+    realFileBtn.addEventListener("change", function() {
+        if (realFileBtn.value) {
+            customTxt.innerHTML = realFileBtn.value.match(
+                /[\/\\]([\w\d\s\.\-\(\)]+)$/
+            )[0];
+        } else {
+            customTxt.innerHTML = "No file chosen, yet.";
+        }
+    });
+</script>
+
+<?php require_once "./includes/footer.php"; 
+?>
