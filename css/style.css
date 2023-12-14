@@ -531,13 +531,15 @@ div.breadcrumb-inc {
   flex-wrap: nowrap;
   gap: 9px;
   padding: 20px 0 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 @media (max-width: 575.9px) {
   div.breadcrumb-inc {
     display: none;
   }
 }
-div.breadcrumb-inc a.init {
+div.breadcrumb-inc .init {
   display: block;
   text-decoration: none;
   color: #696969;
@@ -551,6 +553,8 @@ div.breadcrumb-inc div.ico {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  bottom: 1.5px;
 }
 div.breadcrumb-inc span.atual {
   display: block;
@@ -3081,20 +3085,20 @@ section.linha-tempo fieldset.contain-btn-mobille button.btn-filter-mobille div.i
   justify-content: center;
   align-items: center;
 }
-section.linha-tempo div.contain-filter {
+section.linha-tempo div.contains div.contain-filter-conheca {
   padding: 60px 0 70px;
 }
 @media (min-width: 576px) {
-  section.linha-tempo div.contain-filter {
+  section.linha-tempo div.contains div.contain-filter-conheca {
     padding: 60px 0 120px;
   }
 }
 @media (min-width: 992px) {
-  section.linha-tempo div.contain-filter {
+  section.linha-tempo div.contains div.contain-filter-conheca {
     padding: 60px 0 75 px;
   }
 }
-section.linha-tempo div.contain-filter span.titulo-filter {
+section.linha-tempo div.contains div.contain-filter-conheca span.titulo-filter {
   display: block;
   color: #231F20;
   font-size: 24px;
@@ -3104,42 +3108,42 @@ section.linha-tempo div.contain-filter span.titulo-filter {
   padding-bottom: 20px;
 }
 @media (min-width: 576px) {
-  section.linha-tempo div.contain-filter span.titulo-filter {
+  section.linha-tempo div.contains div.contain-filter-conheca span.titulo-filter {
     padding-bottom: 45px;
   }
 }
 @media (min-width: 992px) {
-  section.linha-tempo div.contain-filter span.titulo-filter {
+  section.linha-tempo div.contains div.contain-filter-conheca span.titulo-filter {
     font-size: 30px;
   }
 }
-section.linha-tempo div.contain-filter div.grid {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
   gap: 45px;
 }
 @media (min-width: 576px) {
-  section.linha-tempo div.contain-filter div.grid {
+  section.linha-tempo div.contains div.contain-filter-conheca div.grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
 @media (min-width: 992px) {
-  section.linha-tempo div.contain-filter div.grid {
+  section.linha-tempo div.contains div.contain-filter-conheca div.grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
   }
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo {
   width: 100%;
   max-width: 380px;
   margin: 0 auto;
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.topo {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo div.topo {
   padding-bottom: 20px;
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.topo span {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo div.topo span {
   display: block;
   color: #231F20;
   font-size: 16px;
@@ -3147,13 +3151,13 @@ section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.topo sp
   font-weight: 600;
   line-height: normal;
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo div.bottom {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-top: 20px;
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom span {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo div.bottom span {
   display: block;
   color: #231F20;
   font-style: normal;
@@ -3161,7 +3165,7 @@ section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom 
   font-size: 15px;
   font-weight: 300;
 }
-section.linha-tempo div.contain-filter div.grid div.card-linha-tempo div.bottom span.nome {
+section.linha-tempo div.contains div.contain-filter-conheca div.grid div.card-linha-tempo div.bottom span.nome {
   font-size: 18px;
   font-weight: 600;
 }
@@ -3480,6 +3484,444 @@ section.urbanismo-info div.contain-media-urbanismo button.btn-media img.tablet-m
   section.urbanismo-info div.contain-media-urbanismo button.btn-media img.tablet-mobille {
     display: none;
   }
+}
+/********* REVISTA **********/
+section.revista-primaria div.titulo span {
+  display: block;
+  color: #231F20;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 53.2px;
+  padding-bottom: 20px;
+}
+@media (max-width: 575.9px) {
+  section.revista-primaria div.titulo span {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+}
+section.revista-filtro fieldset.contain-btn-desktop {
+  overflow-x: auto;
+  display: none;
+  padding-bottom: 5px;
+  position: relative;
+}
+section.revista-filtro fieldset.contain-btn-desktop::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #E4E4E4;
+}
+@media (min-width: 992px) {
+  section.revista-filtro fieldset.contain-btn-desktop {
+    display: block;
+  }
+}
+section.revista-filtro fieldset.contain-btn-desktop div.container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 80px;
+}
+section.revista-filtro fieldset.contain-btn-desktop div.container button.btn-linha-tempo {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px 0 10px;
+  border-bottom: 3px solid transparent;
+  color: #A9A9A9;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  position: relative;
+  z-index: 1;
+}
+section.revista-filtro fieldset.contain-btn-desktop div.container button.btn-linha-tempo.active {
+  color: #231F20;
+  border-bottom: 3px solid #231F20;
+}
+@media (min-width: 992px) {
+  section.revista-filtro fieldset.contain-btn-mobille {
+    display: none;
+  }
+}
+section.revista-filtro fieldset.contain-btn-mobille button.btn-filter-mobille {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 12px 24px 9px 24px;
+  background: #fff;
+  border-radius: 60px;
+  border: 1px solid #D3D3D3;
+  outline: none;
+  cursor: pointer;
+}
+section.revista-filtro fieldset.contain-btn-mobille button.btn-filter-mobille span {
+  display: block;
+  color: #231F20;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  letter-spacing: 0.84px;
+  position: relative;
+  top: 2px;
+}
+section.revista-filtro fieldset.contain-btn-mobille button.btn-filter-mobille div.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.revista-filtro div.destaque {
+  padding: 40px 0 40px;
+}
+@media (min-width: 576px) {
+  section.revista-filtro div.destaque {
+    padding: 60px 0 60px;
+  }
+}
+section.revista-filtro div.destaque div.img img {
+  width: 100%;
+  object-fit: cover;
+}
+section.revista-filtro div.destaque div.body span {
+  display: block;
+  font-style: normal;
+}
+section.revista-filtro div.destaque div.body span.categoria {
+  color: #585858;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16.8px;
+  padding: 25px 0 10px;
+}
+section.revista-filtro div.destaque div.body span.desc {
+  color: #231F20;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35.2px;
+}
+section.revista-filtro div.contains div.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 30px 15px;
+  padding-bottom: 60px;
+}
+@media (min-width: 576px) {
+  section.revista-filtro div.contains div.grid {
+    gap: 70px 150px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  section.revista-filtro div.contains div.grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 77px 33px;
+    padding-bottom: 40px;
+  }
+}
+section.revista-filtro div.contains div.grid div.card-revista {
+  width: 100%;
+}
+section.revista-filtro div.contains div.grid div.card-revista div.img img {
+  object-fit: cover;
+}
+section.revista-filtro div.contains div.grid div.card-revista div.body span {
+  display: block;
+}
+section.revista-filtro div.contains div.grid div.card-revista div.body span.categoria {
+  color: #585858;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.8px;
+  padding: 20px 0 15px;
+}
+section.revista-filtro div.contains div.grid div.card-revista div.body span.desc {
+  color: #231F20;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22.4px;
+}
+section.revista-filtro div.contain-mais {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 75px;
+}
+@media (min-width: 576px) {
+  section.revista-filtro div.contain-mais {
+    padding-bottom: 120px;
+  }
+}
+section.revista-filtro div.contain-mais button.carregar-mais {
+  display: block;
+  width: 100%;
+  border-radius: 60px;
+  border: 1px solid #CDCDCD;
+  background: #FFF;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 20px 17px;
+  color: #231F20;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/********* REVISTA INTERNA **********/
+section.revista-interna-noticia div.top span {
+  display: block;
+}
+section.revista-interna-noticia div.top span.categoria {
+  color: #585858;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.8px;
+}
+section.revista-interna-noticia div.top span.data {
+  color: #231F20;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px;
+  padding: 13px 0;
+}
+section.revista-interna-noticia div.top span.titulo-noticia {
+  color: #231F20;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  section.revista-interna-noticia div.top span.titulo-noticia {
+    font-size: 24px;
+  }
+}
+section.revista-interna-noticia div.top div.img {
+  padding-bottom: 45px;
+}
+section.revista-interna-noticia div.top div.img img {
+  width: 100%;
+  object-fit: cover;
+}
+section.revista-interna-noticia article.infos {
+  padding-bottom: 40px;
+}
+section.revista-interna-noticia article.infos p {
+  color: #585858;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+section.revista-interna-noticia div.img-center {
+  padding-bottom: 60px;
+}
+section.revista-interna-noticia div.grid-revista-interna {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-bottom: 70px;
+}
+@media (min-width: 576px) {
+  section.revista-interna-noticia div.grid-revista-interna {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 768px) {
+  section.revista-interna-noticia div.grid-revista-interna {
+    gap: 40px;
+  }
+}
+section.revista-interna-noticia div.grid-revista-interna div.item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/********* CONTATO **********/
+section.contato-primaria {
+  padding-bottom: 80px;
+}
+@media (min-width: 576px) {
+  section.contato-primaria {
+    padding-bottom: 100px;
+  }
+}
+section.contato-primaria div.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 992px) {
+  section.contato-primaria div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+section.contato-primaria div.grid div.left {
+  padding-right: 0;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  section.contato-primaria div.grid div.left {
+    padding-right: 115px;
+    padding-bottom: 0;
+  }
+}
+section.contato-primaria div.grid div.left span {
+  display: block;
+}
+section.contato-primaria div.grid div.left span.titulo {
+  font-size: 30px;
+  color: #231F20;
+  font-style: normal;
+  font-weight: 300;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+@media (min-width: 576px) {
+  section.contato-primaria div.grid div.left span.titulo {
+    font-size: 38px;
+    padding-top: 0;
+  }
+}
+section.contato-primaria div.grid div.left span.desc {
+  color: #231F20;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.6px;
+  padding-bottom: 15px;
+}
+section.contato-primaria div.grid div.contain-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+section.contato-primaria div.grid div.contain-contatos span.contato {
+  color: #585858;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+section.contato-primaria div.grid div.contain-contatos span.contato .destaque {
+  display: inline;
+  font-weight: 700;
+}
+section.contato-primaria div.grid div.right {
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  section.contato-primaria div.grid div.right {
+    padding-left: 115px;
+  }
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-titulo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-titulo div.ico {
+  position: relative;
+  bottom: 3px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-titulo span {
+  display: block;
+  color: #231F20;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38.4px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco input.input-trabalhe-cns,
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco textarea.input-trabalhe-cns {
+  display: block;
+  width: 100%;
+  background: #fff;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #1c1c1c;
+  margin-bottom: 15px;
+  padding: 9px 0 9px 10px;
+  color: #585858;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  border-radius: 0 !important;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-file {
+  padding: 9px 0 9px 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  border-bottom: 1px solid #1c1c1c;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-file span#custom-text {
+  display: block;
+  flex-grow: 1;
+  color: #585858;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-file button#custom-button {
+  display: block;
+  border: 1px solid #1c1c1c;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 15px 5px 15px;
+  color: #585858;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  white-space: nowrap;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-input-termo {
+  padding-top: 20px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-input-termo .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #1c1c1c;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-input-termo label.custom-control-label {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 26px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-btn-submit {
+  padding-top: 20px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-btn-submit button.submit-trabalhe-cns {
+  display: block;
+  border-radius: 60px;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 55px 9px 55px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

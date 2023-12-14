@@ -674,12 +674,14 @@ div.breadcrumb-inc {
     flex-wrap: nowrap;
     gap: 9px;
     padding: 20px 0 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     @media (max-width: 575.9px) {
         display: none;
     }
 
-    a.init {
+    .init {
         display: block;
         text-decoration: none;
         color: #696969;
@@ -694,6 +696,8 @@ div.breadcrumb-inc {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        position: relative;
+        bottom: 1.5px;
     }
 
     span.atual {

@@ -8,18 +8,26 @@ let disabledBtnFilterTop = (btn) => {
     btn.className = 'btn-filter-top active'
 }
 
-let disabledBtnFilterLinhaTempo = (btn, year, boll) => {
+let disabledBtnFilterContains = (btn, year, boll, all = false) => {
     let btns = document.getElementsByClassName('btn-linha-tempo')
     let contains = Array.from(document.getElementsByClassName('contain-filter'))
     for (let i = 0; i < btns.length; i++) {
         if (boll) btns[i].className = 'btn-linha-tempo'
         if(!boll) document.getElementById('span-btn-filter-mobille').innerHTML = ''
         if(!boll) document.getElementById('span-btn-filter-mobille').innerHTML = year
-        contains[i].className = 'contain-filter d-none'        
     }
     if (boll) btn.className = 'btn-linha-tempo active'
-    year = String(year)
-    document.querySelector(`div.contain-filter[data-year='${year}']`).className = 'contain-filter d-block'
+    if (all == false) year = String(year)
+    
+    for (let i = 0; i < contains.length; i++) {            
+        if(contains[i].getAttribute('data-year') == year && all == false) {
+            contains[i].className = 'contain-filter contain-filter-conheca d-block'
+        } else if (all == false) {
+            contains[i].className = 'contain-filter contain-filter-conheca d-none'
+        } else {
+            contains[i].className = 'contain-filter contain-filter-conheca d-block'   
+        }
+    }
 }
 
 //***************************** YOUTUBE MODAL *************************/
