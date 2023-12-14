@@ -2628,6 +2628,7 @@ section {
                     }
 
                     fieldset.contain-form-trabalhe-conosco {
+
                         input.input-trabalhe-cns,
                         select.select-trabalhe-cns {
                             display: block;
@@ -2731,10 +2732,203 @@ section {
             font-style: normal;
             font-weight: 300;
             padding-top: 40px;
+            padding-bottom: 40px;
 
             @media (min-width: 576px) {
                 font-size: 38px;
                 padding-top: 0;
+            }
+        }
+
+        article {
+            padding-bottom: 70px;
+
+            p {
+                color: #585858;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/********* URBANISMO **********/
+section {
+    &.urbanismo-primaria {
+        div {
+            &.titulo {
+                span {
+                    display: block;
+                    color: #231F20;
+                    font-size: 38px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 53.2px;
+                    padding-bottom: 20px;
+
+                    @media (max-width: 575.9px) {
+                        font-size: 30px;
+                        padding-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.urbanismo-banner {
+        div.banner {
+            img {
+                width: 100%;
+                display: block;
+                object-fit: cover;
+
+                @media (max-width: 575.9px) {
+
+                    &.tablet,
+                    &.desktop {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 576px) {
+
+                    &.mobille,
+                    &.desktop {
+                        display: none;
+                    }
+                }
+
+                @media (min-width: 992px) {
+
+                    &.mobille,
+                    &.tablet {
+                        display: none;
+                    }
+
+                    &.desktop {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    &.urbanismo-info {
+        div {
+            &.grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+                padding: 50px 0 30px;
+    
+                @media (min-width: 576px) {
+                    padding: 60px 0 40px;
+                }
+    
+                @media(min-width: 992px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 80px;
+                    padding: 100px 0 60px;
+                }
+    
+                @media (min-width: 1200px) {
+                    gap: 135px;
+                }
+    
+                div {
+                    &.left {
+                        span {
+                            display: block;
+                            color: #231F20;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 25.6px;
+                        }
+                    }
+    
+                    &.right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+    
+                        span {
+                            display: block;
+                            color: #585858;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 25.6px;
+                        }
+                    }
+                }
+            }
+    
+            &.contain-media-urbanismo {
+                padding-bottom: 60px;
+
+                @media (min-width: 576px) {
+                    padding-bottom: 100px;
+                }
+                 
+                @media (min-width: 992px) {
+                    padding-bottom: 160px;
+                }
+    
+               
+                button.btn-media {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0;
+                    position: relative;
+    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: url('./../img/svg/play_circle.svg') no-repeat center center;
+                        width: 100%;
+                        height: 100%;
+    
+                        @media(max-width: 767.9px) {
+                            background-size: 85px;
+                        }
+                    }
+    
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+
+                        &.desktop {
+                            display: none;
+                        }
+
+                        &.tablet-mobille {
+                            display: block;
+                        }
+
+                        @media(min-width: 768px) {
+                            &.desktop {
+                                display: block;
+                            }
+
+                            &.tablet-mobille {
+                                display: none;
+                            }
+                        }
+    
+                        @media(min-width: 992px) {
+                            // max-width: 900px;
+                        }
+                    }
+                }
             }
         }
     }
