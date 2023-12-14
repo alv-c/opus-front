@@ -27,10 +27,6 @@
 
                     <div class="container-slick-modal-imgs">
 
-                        <!-- <figure class="contain-img-modal-slick-inline">
-                            <img class="d-block mx-auto img-fluid img-modal-slick-inline" src="./img/imovel/galeria-2.png" alt="">
-                        </figure> -->
-
                         <figure class="contain-img-modal-slick-inline">
                             <img class="d-block mx-auto img-fluid img-modal-slick-inline" src="./img/imovel/galeria-2.png" alt="">
                         </figure>
@@ -41,12 +37,12 @@
 
                     </div>
 
-                    <div class="slider slider-nav-modal-imgs" style="border: 2px solid red;">
+                    <div class="slider slider-nav-modal-imgs">
                         <figure>
-                            <img class="d-block mx-auto" style="width: 50px; height: 50px;" src="./img/imovel/galeria-2.png" alt="">
+                            <img src="./img/imovel/galeria-2.png" alt="">
                         </figure>
                         <figure>
-                            <img class="d-block mx-auto" style="width: 50px; height: 50px;" src="./img/imovel/galeria-3.png" alt="">
+                            <img src="./img/imovel/galeria-3.png" alt="">
                         </figure>
                     </div>
 

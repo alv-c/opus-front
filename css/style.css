@@ -26,7 +26,8 @@
   padding: 0;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   display: none !important;
 }
 
@@ -93,10 +94,62 @@ nav.navbar {
   background: #fff;
   padding: 20px 12px !important;
   border-bottom: 1px solid #E4E4E4;
+  position: relative;
 }
 nav.navbar a.navbar-brand svg {
   width: 100%;
   max-width: 130px;
+}
+nav.navbar div.contain-search-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 75px;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  max-height: 98px;
+  background: transparent;
+  transition: all 1.5s;
+  padding-left: 30px;
+}
+@media (min-width: 1200px) {
+  nav.navbar div.contain-search-navbar {
+    display: none;
+  }
+}
+nav.navbar div.contain-search-navbar .search-click {
+  width: 0;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  background: none;
+  padding: 10px 10px 7px;
+  color: #231F20;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  border-radius: 60px;
+  background: #FFF;
+  border: 1px solid transparent;
+}
+nav.navbar div.contain-search-navbar .search-click:focus {
+  width: 100%;
+  border: 1px solid #CDCDCD;
+}
+nav.navbar div.contain-search-navbar button.btn-expand-search {
+  display: inline-block;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+nav.navbar .contain-search-navbar:has(> .search-click:focus) {
+  width: calc(100% - 75px);
+  background: #fff;
 }
 nav.navbar button.navbar-toggler {
   position: relative;
@@ -594,7 +647,7 @@ div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-moda
 .modal .modal-dialog.modal-dialog-slick-inline div.modal-content {
   width: 100% !important;
   height: 100% !important;
-  max-height: 500px !important;
+  max-height: 800px !important;
   padding: 50px 0 25px;
   border-radius: 0 !important;
 }
@@ -644,6 +697,16 @@ div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-moda
 .modal .modal-dialog.modal-dialog-slick-inline div.modal-content img.img-modal-slick-inline {
   width: 100%;
   max-width: 486px;
+}
+.modal .modal-dialog.modal-dialog-slick-inline div.modal-content .slider-nav-modal-imgs figure {
+  padding-right: 20px;
+}
+.modal .modal-dialog.modal-dialog-slick-inline div.modal-content .slider-nav-modal-imgs figure img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  max-width: 190px;
+  height: 100px;
 }
 
 .contain-btn-carrossel {
@@ -1018,55 +1081,38 @@ section.revista div.contain-titulo a.ver-revista-desktop {
 }
 section.revista div.grid {
   display: grid;
-  grid-template-columns: repeat(4, 280px);
-  /* 4 columns of 100px */
-  text-align: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 15px;
 }
-@media (max-width: 610.9px) {
+@media (min-width: 576px) {
   section.revista div.grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 65px 130px;
   }
 }
-@media (min-width: 611px) {
+@media (min-width: 768px) {
   section.revista div.grid {
-    grid-template-columns: repeat(2, 240px);
+    gap: 65px 150px;
   }
 }
 @media (min-width: 992px) {
   section.revista div.grid {
-    grid-template-columns: repeat(4, 240px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
-section.revista div.grid div.coluna {
-  width: 100%;
-  max-width: 280px;
-}
-@media (max-width: 610.9px) {
-  section.revista div.grid div.coluna {
-    margin-bottom: 33px;
-  }
-}
-@media (min-width: 611px) {
-  section.revista div.grid div.coluna {
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 992px) {
-  section.revista div.grid div.coluna {
-    margin-bottom: 0;
-    max-width: 280px;
-  }
-}
-section.revista div.grid div.coluna div.card-revista {
+section.revista div.grid div.card-revista {
   width: 100%;
 }
-section.revista div.grid div.coluna div.card-revista div.bottom span {
+section.revista div.grid div.card-revista div.top img {
+  width: 100%;
+  object-fit: cover;
+}
+section.revista div.grid div.card-revista div.bottom span {
   display: block;
   text-align: left;
 }
-section.revista div.grid div.coluna div.card-revista div.bottom span.categoria {
+section.revista div.grid div.card-revista div.bottom span.categoria {
   color: #585858;
   font-size: 12px;
   font-style: normal;
@@ -1074,7 +1120,7 @@ section.revista div.grid div.coluna div.card-revista div.bottom span.categoria {
   line-height: 16.8px;
   padding: 20px 0 16px;
 }
-section.revista div.grid div.coluna div.card-revista div.bottom span.desc {
+section.revista div.grid div.card-revista div.bottom span.desc {
   color: #231F20;
   font-size: 16px;
   font-style: normal;
@@ -1082,13 +1128,14 @@ section.revista div.grid div.coluna div.card-revista div.bottom span.desc {
   line-height: 22.4px;
 }
 @media (max-width: 610.9px) {
-  section.revista div.grid div.coluna div.card-revista div.bottom span.desc {
+  section.revista div.grid div.card-revista div.bottom span.desc {
     font-size: 13px;
   }
 }
 section.revista div.ver-todas-mobille {
   display: flex;
   justify-content: center;
+  padding-top: 70px;
 }
 @media (min-width: 768px) {
   section.revista div.ver-todas-mobille {

@@ -423,7 +423,7 @@
         <div class="contain-titulo">
             <span class="titulo">Decorado 127m²</span>
             <div class="contain-btns">
-                <button type="button" class="ver-galeria">Ver galeria</button>
+                <button type="button" class="ver-galeria" id="ver-galeria" onclick="openSwipeMain2('ancor-carousel-main2')">Ver galeria</button>
                 <button type="button" class="tour">Tour 360</button>
             </div>
         </div>
@@ -431,17 +431,17 @@
             <!-- CARROSSEL SWIPER -->
             <div class="my-gallery slider-main-2" itemscope itemtype="http://schema.org/ImageGallery">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>

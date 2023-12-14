@@ -69,7 +69,7 @@
         <div class="contains">
             <div class="grid">
                 <!-- Attr data-year deve conter o attr em questão -> data-year -->
-                <div class="card-revista contain-filter" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-1.png" alt="Notícia Opus">
                     </div>
@@ -80,7 +80,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter" data-year="tecnologia">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-2.png" alt="Notícia Opus">
                     </div>
@@ -91,7 +91,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-3.png" alt="Notícia Opus">
                     </div>
@@ -102,7 +102,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter" data-year="tecnologia">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-4.png" alt="Notícia Opus">
                     </div>
@@ -113,7 +113,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-1.png" alt="Notícia Opus">
                     </div>

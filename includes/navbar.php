@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+
     <!-- ESTILOS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -44,6 +44,21 @@
                     </defs>
                 </svg>
             </a>
+
+            <div class="contain-search-navbar">
+                <input type="text" class="search-click" name="" placeholder="Pesquise aqui" />
+                <button type="button" class="btn-expand-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <mask id="mask0_263_1543" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                        </mask>
+                        <g>
+                            <path d="M21.1084 21.8334L14.325 15.05C13.7834 15.5111 13.1604 15.8681 12.4563 16.1209C11.7521 16.3736 11.0445 16.5 10.3334 16.5C8.59822 16.5 7.12971 15.8994 5.92784 14.6982C4.72596 13.497 4.12502 12.0293 4.12502 10.2951C4.12502 8.56087 4.72562 7.09203 5.92684 5.88856C7.12806 4.68508 8.59577 4.08334 10.33 4.08334C12.0642 4.08334 13.533 4.68428 14.7365 5.88615C15.94 7.08801 16.5417 8.55653 16.5417 10.2917C16.5417 11.0445 16.4084 11.7729 16.1417 12.4771C15.875 13.1813 15.525 13.7833 15.0917 14.2834L21.8751 21.0667L21.1084 21.8334ZM10.3334 15.4167C11.7709 15.4167 12.9844 14.9219 13.974 13.9323C14.9636 12.9427 15.4584 11.7292 15.4584 10.2917C15.4584 8.85419 14.9636 7.64065 13.974 6.65106C12.9844 5.66147 11.7709 5.16668 10.3334 5.16668C8.89586 5.16668 7.68232 5.66147 6.69273 6.65106C5.70316 7.64065 5.20838 8.85419 5.20838 10.2917C5.20838 11.7292 5.70316 12.9427 6.69273 13.9323C7.68232 14.9219 8.89586 15.4167 10.3334 15.4167Z" fill="#231F20" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
             <button style="outline: none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação"></button>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav ml-auto">
@@ -55,10 +70,9 @@
                             Empreendimentos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Ação</a>
-                            <a class="dropdown-item" href="#">Outra ação</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            <a class="dropdown-item" href="#">Incorporadora</a>
+                            <a class="dropdown-item" href="#">Urbanismo</a>
+                            <a class="dropdown-item" href="#">Decorados</a>
                         </div>
                     </li>
                     <li class="nav-item">

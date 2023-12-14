@@ -13,22 +13,27 @@ let disabledBtnFilterContains = (btn, year, boll, all = false) => {
     let contains = Array.from(document.getElementsByClassName('contain-filter'))
     for (let i = 0; i < btns.length; i++) {
         if (boll) btns[i].className = 'btn-linha-tempo'
-        if(!boll) document.getElementById('span-btn-filter-mobille').innerHTML = ''
-        if(!boll) document.getElementById('span-btn-filter-mobille').innerHTML = year
+        if (!boll) document.getElementById('span-btn-filter-mobille').innerHTML = ''
+        if (!boll) document.getElementById('span-btn-filter-mobille').innerHTML = year
     }
     if (boll) btn.className = 'btn-linha-tempo active'
     if (all == false) year = String(year)
-    
-    for (let i = 0; i < contains.length; i++) {            
-        if(contains[i].getAttribute('data-year') == year && all == false) {
-            contains[i].className = 'contain-filter contain-filter-conheca d-block'
+
+    for (let i = 0; i < contains.length; i++) {
+        if (contains[i].getAttribute('data-year') == year && all == false) {
+            contains[i].className = 'contain-filter contain-filter-conheca card-revista d-block'
         } else if (all == false) {
-            contains[i].className = 'contain-filter contain-filter-conheca d-none'
+            contains[i].className = 'contain-filter contain-filter-conheca card-revista d-none'
         } else {
-            contains[i].className = 'contain-filter contain-filter-conheca d-block'   
+            contains[i].className = 'contain-filter contain-filter-conheca card-revista d-block'
         }
     }
 }
+
+// EXPANDIR INPUT SEARCH NAVBAR SUPERIOR
+$("button.btn-expand-search").click(function () {
+    $('input.search-click').focus();
+});
 
 //***************************** YOUTUBE MODAL *************************/
 var player
@@ -86,7 +91,7 @@ let scrollSuave = (event, link) => {
     event.preventDefault();
     $("html, body").animate({
         scrollTop: $(`#${link}`).offset().top - 100
-    }, 600, function() {});
+    }, 600, function () { });
 }
 
 //***************************** PAGINA IMOVEL *************************/
@@ -288,7 +293,7 @@ class Dial {
 
 let showChart = () => {
     const chartItems = document.getElementsByClassName("chart");
-    for(let i = 0; i < chartItems.length; i++) {
+    for (let i = 0; i < chartItems.length; i++) {
         let chartProjetos = new Dial(chartItems[i]);
         chartProjetos.animateStart();
     }
