@@ -54,7 +54,7 @@
                 </div>
                 <div class="contain-btns">
                     <button type="button">Fale com o corretor</button>
-                    <button type="button">Acompanhe a obra</button>
+                    <button type="button" onclick="scrollSuave(event,'imovel-diferenciais')">Acompanhe a obra</button>
                 </div>
             </div>
         </div>
@@ -125,7 +125,13 @@
                         Os principais pontos de convivência e conveniência da cidade.
                     </span>
                 </div>
-                <div id='map' class="map"></div>
+
+
+                
+                <div id="mapa"class="map"></div>
+
+
+
             </div>
         </div>
         <div class="col-lg-6 no-margin-padding">
@@ -718,7 +724,7 @@
         <span class="titulo">Produtos similares</span>
 
         <div class="contain-cards">
-            <div class="cartao">
+            <div class="cartao" onclick="window.location.href='#'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -775,7 +781,7 @@
                 </div>
             </div>
 
-            <div class="cartao">
+            <div class="cartao" onclick="window.location.href='#'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -832,7 +838,7 @@
                 </div>
             </div>
 
-            <div class="cartao">
+            <div class="cartao" onclick="window.location.href='#'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -889,7 +895,7 @@
                 </div>
             </div>
 
-            <div class="cartao">
+            <div class="cartao" onclick="window.location.href='#'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -949,51 +955,54 @@
 
     </div>
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIwTPctnSM2PWcbK6cMdlZaSgEYIKp5U&callback=initMap" async defer></script>
-<script>
-    function initMap() {
-        var mapOpts = {
-            center: {
-                lat: -16.73422110044529,
-                lng: -49.305685208893834
-            },
-            zoom: 13,
-            mapTypeId: google.maps.MapTypeId.TERRAIN,
-            styles: [{
-                "featureType": "road.local",
-                "stylers": [{
-                    "weight": 4.5
-                }]
-            }]
-        };
 
-        var map = new google.maps.Map(document.getElementById('map'), mapOpts);
-
-        var bicyclayer = new google.maps.BicyclingLayer();
-        bicyclayer.setMap(map);
-
-        var infowincontent = '<div style="width:200px">CONTENT</div>';
-
-        // Highway 80 Overpass marker
-        var marker0 = new google.maps.Marker({
-            position: {
-                lat: 32.344902,
-                lng: -90.352267
-            },
-            map: map,
-            title: 'Old Highway 80 Overpass',
-            animation: google.maps.Animation.DROP
-        });
-
-        var infowindow0 = new google.maps.InfoWindow({
-            content: infowincontent.replace('CONTENT',
-                'Be careful of traffic on 80. Visibility is poor around the bends, but there are good shoulders further on. Clinton has gas stations, restaurants, and hotels. Loads of people commute on the Trace from Clinton to Ridgeland, so don\'t bike this during rush hour.'
-            )
-        });
-
-        marker0.addListener('click', function() {
-            infowindow0.open(map, marker0);
-        });
+<style>
+    .mapboxgl-marker {
+        position: relative;
+        cursor: pointer;
     }
+
+    .mapboxgl-marker:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 70px;
+        background-image: url('./../img/imovel/cursor-mapa.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .mapboxgl-marker svg {
+        opacity: 0;
+    }
+</style>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGlicmlkYXdlYiIsImEiOiJja284djMyMWwwd20yMm9wd3QzbTZvZnhrIn0.ro1ZJXeWhkK2bCRqOHcx_A';
+
+    var lat = -16.70462320664015;
+    var long = -49.26433650500866;
+
+    var map = new mapboxgl.Map({
+        container: 'mapa', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [long, lat], // starting position [lng, lat]
+        zoom: 17.180720990093583 // starting zoom
+    });
+
+    var marker;
+    marker = new mapboxgl.Marker().setLngLat([long, lat]).addTo(map);
+
+    $('.mapboxgl-marker').click(function () {
+        map.flyTo({
+            center: [long, lat],
+            zoom: 15
+        });
+    });
 </script>
 <?php require_once "./includes/footer.php"; ?>

@@ -24,6 +24,8 @@
     <!-- PHOTOSWIPE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -64,23 +66,23 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Institucional</a>
+                        <a class="nav-link" href="conheca.php">Institucional</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Empreendimentos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Incorporadora</a>
-                            <a class="dropdown-item" href="#">Urbanismo</a>
+                            <a class="dropdown-item" href="incorporacao.php">Incorporadora</a>
+                            <a class="dropdown-item" href="urbanismo.php">Urbanismo</a>
                             <a class="dropdown-item" href="#">Decorados</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Revista</a>
+                        <a class="nav-link" href="revista.php">Revista</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="contato.php">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Opus Revendas</a>

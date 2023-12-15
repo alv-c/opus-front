@@ -57,7 +57,7 @@
 
         <div class="destaque">
             <div class="img">
-                <img class="d-block mx-auto img-fluid" src="./img/revista/revista-top.png" alt="Destaque revista Opus">
+                <img class="d-block mr-auto img-fluid" src="./img/revista/revista-top.png" alt="Destaque revista Opus">
             </div>
             <div class="body">
                 <span class="categoria">12.08.2023  |  Sustentabilidade</span>

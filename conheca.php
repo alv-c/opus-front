@@ -59,8 +59,8 @@
             </div>
             <div class="right">
                 <div class="contain-btn">
-                    <a href="#">Trabalhe conosco</a>
-                    <a href="#">Política de privacidade</a>
+                    <a href="trabalhe-conosco.php">Trabalhe conosco</a>
+                    <a href="politica-privacidade.php">Política de privacidade</a>
                 </div>
                 <div class="contain-media">
                     <button type="button" class="btn-media" onclick="iniciarModalYt('https://www.youtube.com/watch?v=1HN6bhAmQMc')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">

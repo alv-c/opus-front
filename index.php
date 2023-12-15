@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row no-margin-padding">
                 <div class="col-md-4 col-sm-12 no-margin-padding coluna">
-                    <a href="#" class="ancor-card">
+                    <a href="incorporacao.php" class="ancor-card">
                         <div class="card-redirect">
                             <div class="img">
                                 <img class="img-desktop" src="./img/home/incorporacao.png" alt="Incorporação">
@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-12 no-margin-padding coluna">
-                    <a href="#" class="ancor-card">
+                    <a href="urbanismo.php" class="ancor-card">
                         <div class="card-redirect">
                             <div class="img">
                                 <img class="img-desktop" src="./img/home/urbanismo.png" alt="Urbanismo">
@@ -62,7 +62,7 @@
                         oferecem experiências únicas para quem vive ou trabalha em um Opus.
                     </span>
                     <div class="contain-btn">
-                        <button type="button" class="conheca-action">Conheça a Opus</button>
+                        <button type="button" class="conheca-action" onclick="window.location.href='conheca.php'">Conheça a Opus</button>
                     </div>
                 </div>
                 <div class="right">
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="contain-titulo">
                 <span class="titulo">Revista</span>
-                <a href="" class="ver-revista-desktop">Ver todas</a>
+                <a href="revista.php" class="ver-revista-desktop">Ver todas</a>
             </div>
             <div class="grid">
 

@@ -774,6 +774,17 @@ div#dynamicVideoModal {
         div.modal-content {
             background: none !important;
             border: none !important;
+            // border: 2px solid red !important;
+            
+
+            @media (min-width: 576px) {
+                
+            }
+
+            @media (min-width: 992px) {
+                
+            }
+
 
             div.header-modal-player {
                 display: flex;

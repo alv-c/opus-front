@@ -793,8 +793,8 @@ section {
                     div.coluna-list {
                         width: 100%;
                         display: none;
-                            
-                        &:nth-child( -n + 6 ) {
+
+                        &:nth-child(-n + 6) {
                             display: block;
                         }
 
@@ -877,6 +877,10 @@ section {
                     padding: 0;
                     position: relative;
 
+                    @media(min-width: 992px) {
+                        max-width: 900px;
+                    }
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -896,10 +900,6 @@ section {
                         object-fit: cover;
                         height: 100%;
                         max-height: 500px;
-
-                        @media(min-width: 992px) {
-                            max-width: 900px;
-                        }
                     }
                 }
             }
@@ -1267,7 +1267,7 @@ section {
         background: #F6F6F6;
 
         div {
-            &.contain-mapa {
+            &.contain-mapa {                
                 div.top-mobille {
                     width: 100%;
                     padding: 50px 15px 0;
@@ -1309,9 +1309,11 @@ section {
                     }
                 }
 
-                div.map {
+                div#mapa {
+                    width: 100%;
                     width: 100%;
                     height: 250px;
+                    position: relative;
 
                     @media (min-width: 576px) {
                         height: 412px;
@@ -1319,6 +1321,15 @@ section {
 
                     @media (min-width: 992px) {
                         height: 610px;
+                    }
+
+                    canvas.mapboxgl-canvas {
+                        width: 100% !important;
+                        max-width: 100% !important;
+                    }
+
+                    div.mapboxgl-marker {
+                        width: 50px;
                     }
                 }
             }
@@ -1582,6 +1593,7 @@ section {
             gap: 60px;
             flex-direction: column;
 
+
             @media (min-width: 768px) {
                 flex-direction: row;
             }
@@ -1591,7 +1603,7 @@ section {
             }
 
             div {
-                >&.left {
+                &.left {
                     span {
                         display: block;
 
@@ -1655,7 +1667,7 @@ section {
                     }
                 }
 
-                >&.right {
+                &.right {
                     flex-grow: 1;
                     display: flex;
                     flex-direction: column;
@@ -3047,6 +3059,7 @@ section {
                 img {
                     width: 100%;
                     object-fit: cover;
+                    max-width: 1020px;
                 }
             }
 
@@ -3096,7 +3109,7 @@ section {
                     width: 100%;
                     display: none;
 
-                    &:nth-child( -n + 4 ) {
+                    &:nth-child(-n + 4) {
                         display: block;
                     }
 
@@ -3342,7 +3355,7 @@ section {
                             justify-content: flex-start;
                             align-items: center;
                             gap: 18px;
-                            padding-bottom: 20px ;
+                            padding-bottom: 20px;
 
                             div.ico {
                                 position: relative;
@@ -3383,7 +3396,7 @@ section {
                                 display: none;
                             }
 
-                            & input.radio-contato:checked + label {
+                            & input.radio-contato:checked+label {
                                 color: #000;
                                 font-weight: 600;
                                 border-bottom: 2px solid #000;

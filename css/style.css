@@ -1620,6 +1620,11 @@ section.imovel-primaria div.row-imovel-primaria div.media button.btn-media {
   padding: 0;
   position: relative;
 }
+@media (min-width: 992px) {
+  section.imovel-primaria div.row-imovel-primaria div.media button.btn-media {
+    max-width: 900px;
+  }
+}
 section.imovel-primaria div.row-imovel-primaria div.media button.btn-media::after {
   content: "";
   position: absolute;
@@ -1639,11 +1644,6 @@ section.imovel-primaria div.row-imovel-primaria div.media button.btn-media img {
   object-fit: cover;
   height: 100%;
   max-height: 500px;
-}
-@media (min-width: 992px) {
-  section.imovel-primaria div.row-imovel-primaria div.media button.btn-media img {
-    max-width: 900px;
-  }
 }
 section.imovel-primaria div.row-imovel-primaria div.right {
   width: 100%;
@@ -2025,19 +2025,28 @@ section.imovel-mapa div.contain-mapa div.top-mobille span.desc {
     padding-bottom: 30px;
   }
 }
-section.imovel-mapa div.contain-mapa div.map {
+section.imovel-mapa div.contain-mapa div#mapa {
+  width: 100%;
   width: 100%;
   height: 250px;
+  position: relative;
 }
 @media (min-width: 576px) {
-  section.imovel-mapa div.contain-mapa div.map {
+  section.imovel-mapa div.contain-mapa div#mapa {
     height: 412px;
   }
 }
 @media (min-width: 992px) {
-  section.imovel-mapa div.contain-mapa div.map {
+  section.imovel-mapa div.contain-mapa div#mapa {
     height: 610px;
   }
+}
+section.imovel-mapa div.contain-mapa div#mapa canvas.mapboxgl-canvas {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+section.imovel-mapa div.contain-mapa div#mapa div.mapboxgl-marker {
+  width: 50px;
 }
 section.imovel-mapa div.contain-sanfona {
   height: 100%;
@@ -3639,6 +3648,7 @@ section.revista-filtro div.destaque {
 section.revista-filtro div.destaque div.img img {
   width: 100%;
   object-fit: cover;
+  max-width: 1020px;
 }
 section.revista-filtro div.destaque div.body span {
   display: block;
