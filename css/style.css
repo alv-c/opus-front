@@ -3583,6 +3583,7 @@ section.revista-filtro fieldset.contain-btn-mobille button.btn-filter-mobille di
 }
 section.revista-filtro div.destaque {
   padding: 40px 0 40px;
+  cursor: pointer;
 }
 @media (min-width: 576px) {
   section.revista-filtro div.destaque {
@@ -3634,6 +3635,7 @@ section.revista-filtro div.contains div.grid {
 section.revista-filtro div.contains div.grid div.card-revista {
   width: 100%;
   display: none;
+  cursor: pointer;
 }
 section.revista-filtro div.contains div.grid div.card-revista:nth-child(-n+4) {
   display: block;

@@ -24,9 +24,9 @@
                             <div class="right-top">
                                 <span class="titulo">Institucional</span>
                                 <div class="contain-btns">
-                                    <a href="#" class="item">A Opus</a>
-                                    <a href="#" class="item">Política de privacidade</a>
-                                    <a href="#" class="item">Trabalhe conosco</a>
+                                    <a href="conheca.php" class="item">A Opus</a>
+                                    <a href="politica-privacidade.php" class="item">Política de privacidade</a>
+                                    <a href="trabalhe-conosco.php" class="item">Trabalhe conosco</a>
                                 </div>
                             </div>
                         </div>

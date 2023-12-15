@@ -55,7 +55,7 @@
             </div>
         </fieldset>
 
-        <div class="destaque">
+        <div class="destaque" onclick="window.location.href='revista-interna.php'">
             <div class="img">
                 <img class="d-block mr-auto img-fluid" src="./img/revista/revista-top.png" alt="Destaque revista Opus">
             </div>
@@ -70,7 +70,7 @@
         <div class="contains">
             <div class="grid" id="grid-cards-revista">
                 <!-- Attr data-year deve conter o attr em questão -> data-year -->
-                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade" onclick="window.location.href='revista-interna.php'">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-1.png" alt="Notícia Opus">
                     </div>
@@ -81,7 +81,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia" onclick="window.location.href='revista-interna.php'">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-2.png" alt="Notícia Opus">
                     </div>
@@ -92,7 +92,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade" onclick="window.location.href='revista-interna.php'">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-3.png" alt="Notícia Opus">
                     </div>
@@ -103,7 +103,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="tecnologia" onclick="window.location.href='revista-interna.php'">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-4.png" alt="Notícia Opus">
                     </div>
@@ -114,7 +114,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
+                <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade" onclick="window.location.href='revista-interna.php'">
                     <div class="img">
                         <img class="d-block mx-auto img-fluid" src="./img/revista/revista-card-1.png" alt="Notícia Opus">
                     </div>
