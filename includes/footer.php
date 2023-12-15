@@ -212,16 +212,6 @@
         //     });
         // });      
         
-        let openSwipeMain2 = (classe) => {
-            let itens = document.getElementsByClassName(classe)
-            for(let i = 0; i < itens.length; i++) {
-                if(itens[i].getAttribute('tabindex') == 0) {
-                    itens[i].click()
-                    break
-                }
-            }
-        }
-
         var initPhotoSwipeFromDOM = function(gallerySelector) {
             // parse slide data (url, title, size ...) from DOM elements 
             // (children of gallerySelector)
@@ -411,7 +401,6 @@
                     var curr = gallery.currItem;
                     var index2 = curr.el.dataset.slickIndex;
                     $('.slider-main').slick('slickGoTo', index2);
-                    $('.slider-main-2').slick('slickGoTo', index2);
                 });
 
                 gallery.listen('beforeChange', function() {
@@ -445,18 +434,12 @@
         // CARROSSEL SESSAO "ESTAGIO DA OBRA" PAGINA IMOVEL.PHP
         initPhotoSwipeFromDOM('.slider-main');
 
-        // CARROSSEL SESSAO "GALERIA" PAGINA IMOVEL.PHP
-        initPhotoSwipeFromDOM('.slider-main-2');
-
         // CARROSSEL SESSAO "ESTAGIO DA OBRA" PAGINA IMOVEL.PHP
         $(document).ready(function() {
             $('.slider-main').slick({
                 infinite: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                // arrows: false,
-                // variableWidth: true,
-                // adaptiveHeight: true,
                 navigation: {
                     nextEl: '.btn-next',
                     prevEl: '.btn-prev',
@@ -541,102 +524,6 @@
             }, 1500);
             <?php endif; ?>
         });
-
-
-        //***************************** MODAL SLICK INLINE *************************/
-        let openModalSlickInline = (component) => {
-            $('.container-slick-modal').show()
-
-            $('.container-slick-modal').slick({
-                dots: false,
-                arrows: false,
-                infinite: false,
-            });
-
-            let filtro = $(component).data('filter');
-            $(".container-slick-modal").slick('slickUnfilter');
-            $(".container-slick-modal").slick('slickFilter', `.${filtro}`);
-            $('#modal-slick-inline').modal('show');
-
-            let label = component.children[1].innerHTML
-            $('#titulo-modal-slick-inline').html(label)
-        }
-
-        let closeModalSlickInline = (hide = true) => {
-            $('.container-slick-modal').hide()
-            $(".container-slick-modal").slick('slickUnfilter');
-            $('.container-slick-modal').slick('unslick');
-
-            if(hide) {
-                setTimeout(function() {
-                    $('#modal-slick-inline').modal('hide');
-                }, 1000);
-            }
-            $('#modal-slick-inline').data('bs.modal',null);
-        }
-
-        $('#modal-slick-inline').on('shown.bs.modal', function(e) {
-            $('.container-slick-modal').slick('setPosition');
-            $('.wrap-modal-slider').addClass('open');
-        })
-
-        $('#modal-slick-inline').on('hidden.bs.modal', function () {
-            closeModalSlickInline(false)
-        })
-
-        //***************************** MODAL SLICK INLINE IMGS *************************/
-        let openModalSlickInlineImgs = () => {
-            $('.container-slick-modal-imgs').show();
-            $('.slider-nav-modal-imgs').show();
-
-            $('.container-slick-modal-imgs').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                infinite: false,
-                asNavFor: '.slider-nav-modal-imgs',
-                autoplay: true,
-            });
-
-            $('.slider-nav-modal-imgs').slick({
-                slidesToShow: 8 ,
-                slidesToScroll: 1,
-                asNavFor: '.container-slick-modal-imgs',
-                centerMode: true,
-                focusOnSelect: true,
-                infinite: false,
-                variableWidth: true,
-                autoplay: true,
-            });
-
-            $('#modal-slick-inline-imgs').modal('show');
-        }
-
-        let closeModalSlickInlineImgs = (hide = true) => {
-            $('.container-slick-modal-imgs').hide();
-            $('.slider-nav-modal-imgs').hide();
-
-            $('.container-slick-modal-imgs').slick('unslick');
-            $('.slider-nav-modal-imgs').slick('unslick');
-            
-            if (hide) {
-                setTimeout(function() {
-                    $('#modal-slick-inline-imgs').modal('hide');
-                }, 1000);
-            }
-            $('#modal-slick-inline-imgs').data('bs.modal',null);
-        }
-
-        $('#modal-slick-inline-imgs').on('shown.bs.modal', function(e) {
-            $('.container-slick-modal-imgs').slick('setPosition');
-            $('.slider-nav-modal-imgs').slick('setPosition');
-            $('.wrap-modal-slider-imgs').addClass('open');
-        })
-
-        $('#modal-slick-inline').on('hidden.bs.modal', function () {
-            closeModalSlickInlineImgs(false)
-        })
     </script>
 
     <!-- SCRIPTS -->

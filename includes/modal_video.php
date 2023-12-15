@@ -1,6 +1,6 @@
 <!-- MODAL VIDEO -->
 <div class="modal fade" id="dynamicVideoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-fullscreen modal-player-youtube">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen modal-player-youtube">
         <div class="modal-content">
             <div class="header-modal-player">
                 <button type="button" class="btn-modal-player" id="pauseBtn" data-bs-dismiss="modal" aria-label="Close">

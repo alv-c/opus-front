@@ -621,6 +621,7 @@ div.breadcrumb-inc span.atual {
 div#dynamicVideoModal div.modal-player-youtube div.modal-content {
   background: none !important;
   border: none !important;
+  margin: 0 auto !important;
 }
 div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-modal-player {
   display: flex;
@@ -636,77 +637,8 @@ div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-moda
   outline: none;
   cursor: pointer;
 }
-
-.modal.show {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-.modal .modal-dialog.modal-dialog-slick-inline {
+div#dynamicVideoModal div.modal-player-youtube div.modal-content div.modal-body iframe {
   width: 100% !important;
-  max-width: 100% !important;
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content {
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 800px !important;
-  padding: 50px 0 25px;
-  border-radius: 0 !important;
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  max-width: 1215px;
-  margin: 0 auto;
-  color: #231F20;
-  font-style: normal;
-  font-weight: 400;
-  padding: 0 10px;
-}
-@media (min-width: 768px) {
-  .modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain {
-    padding: 0;
-  }
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain span.titulo {
-  flex-grow: 1;
-  display: block;
-  font-size: 24px;
-  line-height: 42px;
-}
-@media (min-width: 576px) {
-  .modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain span.titulo {
-    font-size: 18px;
-  }
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain span.titulo span.peso {
-  display: inline;
-  font-size: 30px;
-  line-height: 42px;
-}
-@media (min-width: 576px) {
-  .modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain span.titulo span.peso {
-    font-size: 24px;
-  }
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content div.modal-header-inline div.contain div.contain-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content img.img-modal-slick-inline {
-  width: 100%;
-  max-width: 486px;
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content .slider-nav-modal-imgs figure {
-  padding-right: 20px;
-}
-.modal .modal-dialog.modal-dialog-slick-inline div.modal-content .slider-nav-modal-imgs figure img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  max-width: 190px;
-  height: 100px;
 }
 
 .contain-btn-carrossel {
@@ -747,6 +679,18 @@ div#dynamicVideoModal div.modal-player-youtube div.modal-content div.header-moda
   .wrapper .video-wrapper .pswp__video {
     height: 360px;
   }
+}
+
+.lg-backdrop.in {
+  background-color: #fff !important;
+}
+
+.lg-thumb-outer {
+  background-color: #fff !important;
+}
+
+.lg-sub-html {
+  color: #000 !important;
 }
 
 /********* HOME **********/

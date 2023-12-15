@@ -1,7 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
 <?php require_once "./includes/modal_video.php"; ?>
-<?php require_once "./includes/modal_slick_inline.php"; ?>
-<?php require_once "./includes/modal_slick_inline_imgs.php"; ?>
 <?php $pagina = 'imovel'; ?>
 
 <section>
@@ -303,7 +301,28 @@
     <div class="container">
         <div class="contain-titulo">
             <span class="titulo">Imagens</span>
-            <button type="button" class="ver-galeria-imgs" onclick="openModalSlickInlineImgs()">Ver galeria</button>
+
+            <script>
+                let itens1 = <?= json_encode([
+                    [
+                        'src' => "./img/imovel/galeria-1.png",
+                        'thumb' => "./img/imovel/galeria-1.png",
+                        'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                    ],
+                    [
+                        'src' => "./img/imovel/galeria-2.png",
+                        'thumb' => "./img/imovel/galeria-2.png",
+                        'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                    ],
+                    [
+                        'src' => "./img/imovel/galeria-3.png",
+                        'thumb' => "./img/imovel/galeria-3.png",
+                        'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                    ],
+                ]) ?>
+            </script>
+
+            <button type="button" class="ver-galeria-imgs" id="gallery-2" onclick="openGalleryModal('gallery-2', itens1)">Ver galeria</button>
         </div>
         <div class="galeria-grid">
             <div class="grid-item left">
@@ -333,8 +352,117 @@
             </div>
             <div class="right">
                 <div class="sub sub-left">
-                    <!-- openModalSlickInline(ID_MEDIDA) -->
-                    <button type="button" data-filter="1" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <script>
+                        let itens2 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/fotos-gratis/ilustracao-3d-de-caneta-colocando-carrapatos-azuis-no-papel_107791-15675.jpg?w=1060&t=st=1702667386~exp=1702667986~hmac=f12a980cc1cc3953b5d586218fe3d12e6d667072dc7822fe72200dd21284157c",
+                                'thumb' => "https://img.freepik.com/fotos-gratis/ilustracao-3d-de-caneta-colocando-carrapatos-azuis-no-papel_107791-15675.jpg?w=1060&t=st=1702667386~exp=1702667986~hmac=f12a980cc1cc3953b5d586218fe3d12e6d667072dc7822fe72200dd21284157c",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/fotos-gratis/retrato-de-uma-jovem-pensativa-fazendo-anotacoes_171337-1646.jpg?w=1380&t=st=1702667407~exp=1702668007~hmac=54ac3a2741bf0701b2e32234fcf1b24026d0d93cb2efd5004bc20ddcaab0c34b",
+                                'thumb' => "https://img.freepik.com/fotos-gratis/retrato-de-uma-jovem-pensativa-fazendo-anotacoes_171337-1646.jpg?w=1380&t=st=1702667407~exp=1702668007~hmac=54ac3a2741bf0701b2e32234fcf1b24026d0d93cb2efd5004bc20ddcaab0c34b",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/homem-sorridente-verificando-o-fundo-de-lista-de-verificacao-gigante_23-2148091573.jpg?w=826&t=st=1702667426~exp=1702668026~hmac=d29172be5cad8b912d804185f15a79fd8a667f8100f16f6e8a0c5e6c1197f460",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/homem-sorridente-verificando-o-fundo-de-lista-de-verificacao-gigante_23-2148091573.jpg?w=826&t=st=1702667426~exp=1702668026~hmac=d29172be5cad8b912d804185f15a79fd8a667f8100f16f6e8a0c5e6c1197f460",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+
+                        let itens3 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-pros-e-contras_114360-13409.jpg?w=826&t=st=1702667544~exp=1702668144~hmac=ca02d3199fa0f4d4f7808f6bfd69b0027d118c104a6e5dfdf88e0d0b376be6bf",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-pros-e-contras_114360-13409.jpg?w=826&t=st=1702667544~exp=1702668144~hmac=ca02d3199fa0f4d4f7808f6bfd69b0027d118c104a6e5dfdf88e0d0b376be6bf",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/psd-gratuitas/resumo-formas-sobre-fundo-branco_1297-153.jpg?w=826&t=st=1702667566~exp=1702668166~hmac=0a0544d25b74f9b98ec37535ee781fda321bc31f7915475298414df845ec7fed",
+                                'thumb' => "https://img.freepik.com/psd-gratuitas/resumo-formas-sobre-fundo-branco_1297-153.jpg?w=826&t=st=1702667566~exp=1702668166~hmac=0a0544d25b74f9b98ec37535ee781fda321bc31f7915475298414df845ec7fed",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-premium/lista-de-verificacao-com-lista-de-marcas-de-verificacao-on-line-na-ilustracao-plana-dos-desenhos-animados-da-tela-do-computador_212005-565.jpg?w=996",
+                                'thumb' => "https://img.freepik.com/vetores-premium/lista-de-verificacao-com-lista-de-marcas-de-verificacao-on-line-na-ilustracao-plana-dos-desenhos-animados-da-tela-do-computador_212005-565.jpg?w=996",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+
+                        let itens4 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/fotos-gratis/escrita-da-mao-em-um-papel-com-uma-caneta_1232-1343.jpg?w=1380&t=st=1702667729~exp=1702668329~hmac=e2c86f6af2f2c536d91fd785e0198f1efd86546346bfc938fbc6edaf5b4c5b19",
+                                'thumb' => "https://img.freepik.com/fotos-gratis/escrita-da-mao-em-um-papel-com-uma-caneta_1232-1343.jpg?w=1380&t=st=1702667729~exp=1702668329~hmac=e2c86f6af2f2c536d91fd785e0198f1efd86546346bfc938fbc6edaf5b4c5b19",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/pessoas-planas-verificando-o-fundo-de-lista-de-verificacao-gigante_23-2148084351.jpg?w=826&t=st=1702667745~exp=1702668345~hmac=e340fa37325837412fa8d6c55b9f061693927090944a401d4a88332c342ba688",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/pessoas-planas-verificando-o-fundo-de-lista-de-verificacao-gigante_23-2148084351.jpg?w=826&t=st=1702667745~exp=1702668345~hmac=e340fa37325837412fa8d6c55b9f061693927090944a401d4a88332c342ba688",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/lista-de-verificacao-gigante_52683-4354.jpg?w=826&t=st=1702667759~exp=1702668359~hmac=29eddecd4f01ef9436a1b5e4b966f706039188561ed6eb57369f474ad321e3bc",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/lista-de-verificacao-gigante_52683-4354.jpg?w=826&t=st=1702667759~exp=1702668359~hmac=29eddecd4f01ef9436a1b5e4b966f706039188561ed6eb57369f474ad321e3bc",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+
+                        let itens5 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/formulario-de-documento-online-acordo-digital-contrato-eletronico-questionario-na-internet-para-fazer-a-lista-observe-cedula-de-votacao-elemento-de-design-plano-de-votacao_335657-2667.jpg?w=826&t=st=1702667837~exp=1702668437~hmac=a308595d8e838722b27a2811b0f1bad493844c61af27fb11ac5d00b45b24e68d",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/formulario-de-documento-online-acordo-digital-contrato-eletronico-questionario-na-internet-para-fazer-a-lista-observe-cedula-de-votacao-elemento-de-design-plano-de-votacao_335657-2667.jpg?w=826&t=st=1702667837~exp=1702668437~hmac=a308595d8e838722b27a2811b0f1bad493844c61af27fb11ac5d00b45b24e68d",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/modelo-de-ajuda-e-suporte-da-web-com-pontos-de-interrogacao_1017-23984.jpg?w=826&t=st=1702667853~exp=1702668453~hmac=69896d7f571a0f7ec69df3e163285571eebb1b04799d0320c7356ffa088bed83",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/modelo-de-ajuda-e-suporte-da-web-com-pontos-de-interrogacao_1017-23984.jpg?w=826&t=st=1702667853~exp=1702668453~hmac=69896d7f571a0f7ec69df3e163285571eebb1b04799d0320c7356ffa088bed83",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/homem-analisar-lista-lista-ilustracao_23-2148079800.jpg?w=826&t=st=1702667863~exp=1702668463~hmac=f67fc4bd876bffff0f7872c305e8cf9de977fd2549553eecbc197e89ee5beee4",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/homem-analisar-lista-lista-ilustracao_23-2148079800.jpg?w=826&t=st=1702667863~exp=1702668463~hmac=f67fc4bd876bffff0f7872c305e8cf9de977fd2549553eecbc197e89ee5beee4",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+
+                        let itens6 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-pessoas-com-gadget-usam-internet-de-alta-velocidade_1150-65912.jpg?w=826&t=st=1702667943~exp=1702668543~hmac=12f1100f1d54dcea3d40ee45c40e5ccff794a16c898054ed57d954e465b8c3cd",
+                                'thumb' => "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-pessoas-com-gadget-usam-internet-de-alta-velocidade_1150-65912.jpg?w=826&t=st=1702667943~exp=1702668543~hmac=12f1100f1d54dcea3d40ee45c40e5ccff794a16c898054ed57d954e465b8c3cd",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/fotos-gratis/aluna-aprendendo-ingles-online_23-2148999543.jpg?w=1380&t=st=1702667954~exp=1702668554~hmac=d12f5e7b714653f410574867be932cc096c5e146ad0c4a0a53fcdeaf12b7b8c4",
+                                'thumb' => "https://img.freepik.com/fotos-gratis/aluna-aprendendo-ingles-online_23-2148999543.jpg?w=1380&t=st=1702667954~exp=1702668554~hmac=d12f5e7b714653f410574867be932cc096c5e146ad0c4a0a53fcdeaf12b7b8c4",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/mulher-verificar-gigante-lista-de-verificacao-fundo_23-2148082474.jpg?w=826&t=st=1702667966~exp=1702668566~hmac=3f9a888e55cb5c85922a6173d8c1b4f4b54c3491eecb0d17c82979d781887554",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/mulher-verificar-gigante-lista-de-verificacao-fundo_23-2148082474.jpg?w=826&t=st=1702667966~exp=1702668566~hmac=3f9a888e55cb5c85922a6173d8c1b4f4b54c3491eecb0d17c82979d781887554",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+
+                        let itens7 = <?= json_encode([
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/lista-de-verificacao-gigante_23-2148084002.jpg?w=826&t=st=1702668037~exp=1702668637~hmac=8894e754d4f49ec675c7989fb8bd903c3010e6dcc1a3503a7c652962a19c123e",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/lista-de-verificacao-gigante_23-2148084002.jpg?w=826&t=st=1702668037~exp=1702668637~hmac=8894e754d4f49ec675c7989fb8bd903c3010e6dcc1a3503a7c652962a19c123e",
+                                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/equipe-trabalhando-no-plano-de-fundo-da-lista-de-verificacao_23-2148097324.jpg?w=826&t=st=1702668050~exp=1702668650~hmac=70b9a39d744cbeb1c77f93a429e9dbfae45a80e58f730f8518caa468fc3d5424",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/equipe-trabalhando-no-plano-de-fundo-da-lista-de-verificacao_23-2148097324.jpg?w=826&t=st=1702668050~exp=1702668650~hmac=70b9a39d744cbeb1c77f93a429e9dbfae45a80e58f730f8518caa468fc3d5424",
+                                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+                            ],
+                            [
+                                'src' => "https://img.freepik.com/vetores-gratis/mao-desenhada-homem-verificando-a-ilustracao-de-lista-de-verificacao-gigante_52683-4217.jpg?w=826&t=st=1702668051~exp=1702668651~hmac=1120eea948d4e19b80d153e1859c6ada5cc56010daa337863b61a0c4424e8e8c",
+                                'thumb' => "https://img.freepik.com/vetores-gratis/mao-desenhada-homem-verificando-a-ilustracao-de-lista-de-verificacao-gigante_52683-4217.jpg?w=826&t=st=1702668051~exp=1702668651~hmac=1120eea948d4e19b80d153e1859c6ada5cc56010daa337863b61a0c4424e8e8c",
+                                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+                            ],
+                        ]) ?>
+                    </script>
+                    
+                    <button type="button" data-filter="1" class="btn-modal-planta" id="gallery-2" onclick="openGalleryModal('gallery-2', itens2)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -347,7 +475,7 @@
                         </div>
                         <span>116,73m² | 3 suítes</span>
                     </button>
-                    <button type="button" data-filter="2" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <button type="button" data-filter="2" class="btn-modal-planta" id="gallery-3" onclick="openGalleryModal('gallery-3', itens3)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -360,7 +488,7 @@
                         </div>
                         <span>127m² | 3 suítes</span>
                     </button>
-                    <button type="button" data-filter="3" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <button type="button" data-filter="3" class="btn-modal-planta" id="gallery-4" onclick="openGalleryModal('gallery-4', itens4)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -375,7 +503,7 @@
                     </button>
                 </div>
                 <div class="sub sub-right">
-                    <button type="button" data-filter="4" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <button type="button" data-filter="4" class="btn-modal-planta" id="gallery-5" onclick="openGalleryModal('gallery-5', itens5)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -388,7 +516,7 @@
                         </div>
                         <span>100m² | 2 ou 3 suítes</span>
                     </button>
-                    <button type="button" data-filter="5" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <button type="button" data-filter="5" class="btn-modal-planta" id="gallery-6" onclick="openGalleryModal('gallery-6', itens6)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -401,7 +529,7 @@
                         </div>
                         <span>130m² | 3 suítes</span>
                     </button>
-                    <button type="button" data-filter="6" class="btn-modal-planta" onclick="openModalSlickInline(this)">
+                    <button type="button" data-filter="6" class="btn-modal-planta" id="gallery-7" onclick="openGalleryModal('gallery-7', itens7)">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <mask id="mask0_99_395" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
@@ -426,11 +554,32 @@
     </div>
 </section>
 <section class="imovel-carrossel" id="imovel-carrossel">
+
+    <script>
+        let itens8 = <?= json_encode([
+            [
+                'src' => "./img/imovel/img-carrossel.png",
+                'thumb' => "./img/imovel/img-carrossel.png",
+                'subHtml' => "<h4>Descrição Imagem 1 Php</h1>"
+            ],
+            [
+                'src' => "./img/imovel/galeria-2.png",
+                'thumb' => "./img/imovel/galeria-2.png",
+                'subHtml' => "<h4>Descrição Imagem 2 Php</h1>"
+            ],
+            [
+                'src' => "./img/imovel/img-carrossel.png",
+                'thumb' => "./img/imovel/img-carrossel.png",
+                'subHtml' => "<h4>Descrição Imagem 3 Php</h1>"
+            ],
+        ]) ?>
+    </script>
+
     <div class="container">
         <div class="contain-titulo">
             <span class="titulo">Decorado 127m²</span>
             <div class="contain-btns">
-                <button type="button" class="ver-galeria" id="ver-galeria" onclick="openSwipeMain2('ancor-carousel-main2')">Ver galeria</button>
+                <button type="button" class="ver-galeria" id="ver-galeria" onclick="openGalleryModal('ver-galeria', itens8)">Ver galeria</button>
                 <button type="button" class="tour">Tour 360</button>
             </div>
         </div>
@@ -438,17 +587,17 @@
             <!-- CARROSSEL SWIPER -->
             <div class="my-gallery slider-main-2" itemscope itemtype="http://schema.org/ImageGallery">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="item-slick">
-                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class=" item-slick">
-                    <a class="ancor-carousel-main2" href="./img/imovel/img-carrossel.png" data-size="1216x480" itemprop="contentUrl">
+                    <a class="ancor-carousel-main2" data-size="1216x480" itemprop="contentUrl">
                         <img src="./img/imovel/img-carrossel.png" itemprop="thumbnail" alt="Image description" />
                     </a>
                 </figure>
@@ -983,6 +1132,7 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
 <script>
+    // MAPBOX
     mapboxgl.accessToken = 'pk.eyJ1IjoiaGlicmlkYXdlYiIsImEiOiJja284djMyMWwwd20yMm9wd3QzbTZvZnhrIn0.ro1ZJXeWhkK2bCRqOHcx_A';
 
     var lat = -16.70462320664015;

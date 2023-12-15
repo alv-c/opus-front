@@ -49,6 +49,21 @@ let carregarMais = (id, num = 0) => {
     }
 }
 
+$(document).ready(function () {
+    function lightGallery(content,itens) {
+        // LIGHTGALLERY SWIPE
+        const $galeriaSessaoImagens =  document.getElementById(content);
+        const galeriaSessaoImagens = window.lightGallery($galeriaSessaoImagens, {
+            dynamic: true,
+            plugins: [lgZoom, lgVideo, lgThumbnail],
+            dynamicEl: itens
+        });
+
+        galeriaSessaoImagens.openGallery(0);
+    }
+    window.openGalleryModal = (id,itens) => lightGallery(id,itens);
+})
+
 //***************************** YOUTUBE MODAL *************************/
 var player
 var videoId
