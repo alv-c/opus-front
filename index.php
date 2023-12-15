@@ -141,7 +141,7 @@
 
             </div>
             <div class="ver-todas-mobille">
-                <a href="" class="ver-revista-desktop">Ver todas</a>
+                <a href="revista.php" class="ver-revista-desktop">Ver todas</a>
             </div>
         </div>
     </section>

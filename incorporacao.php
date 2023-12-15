@@ -2,20 +2,34 @@
 <?php $pagina = 'incorporacao'; ?>
 <!-- Modal Tipo Imovel -->
 <div class="modal fade" id="modalTipoImovel" tabindex="-1" role="dialog" aria-labelledby="modalLabelTipoImovel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabelTipoImovel">Modal Tipo Imovel</h5>
+                <span class="modal-title" id="modalLabelTipoImovel">Tipo Imovel</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+
+
+                <input type="checkbox" class="check-modal-tipoImovel" name="tipoImovel" id="residencial" value="residencial">
+                <label for="residencial">Residencial</label>
+
+                <input type="checkbox" class="check-modal-tipoImovel" name="tipoImovel" id="compactosLuxo" value="compactosLuxo">
+                <label for="compactosLuxo">Compactos de luxo</label>
+
+                <input type="checkbox" class="check-modal-tipoImovel" name="tipoImovel" id="comercial" value="comercial">
+                <label for="comercial">Comercial</label>
+
+                <input type="checkbox" class="check-modal-tipoImovel" name="tipoImovel" id="linhaProdutos" value="linhaProdutos">
+                <label for="linhaProdutos">Linha de produtos</label>
+
+                <input type="checkbox" class="check-modal-tipoImovel" name="tipoImovel" id="decorados" value="decorados">
+                <label for="decorados">Decorados</label>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                <button type="button" class="aplicar-filtro" data-dismiss="modal">Aplicar</button>
             </div>
         </div>
     </div>
@@ -23,20 +37,52 @@
 
 <!-- Modal Filtro -->
 <div class="modal fade" id="modalFiltro" tabindex="-1" role="dialog" aria-labelledby="modalFiltroLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalFiltroLabel">Modal Filtro</h5>
+                <h5 class="modal-title" id="modalFiltroLabel">Filtrar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <select name="categoria" id="categoria" class="select-modal-filtrar">
+                    <option hidden>Categoria</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
+
+                <select name="tipo" id="tipo" class="select-modal-filtrar">
+                    <option hidden>Tipo</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
+
+                <select name="cidade" id="cidade" class="select-modal-filtrar">
+                    <option hidden>Cidade</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
+
+                <select name="bairro" id="bairro" class="select-modal-filtrar">
+                    <option hidden>Bairro</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
+
+                <select name="metragem" id="metragem" class="select-modal-filtrar">
+                    <option hidden>Metragem</option>
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                <button type="button" class="aplicar-filtro" data-dismiss="modal">Aplicar</button>
             </div>
         </div>
     </div>

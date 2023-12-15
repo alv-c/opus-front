@@ -873,7 +873,7 @@
         <span class="titulo">Produtos similares</span>
 
         <div class="contain-cards">
-            <div class="cartao" onclick="window.location.href='#'">
+            <div class="cartao" onclick="window.location.href='imovel.php'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -930,7 +930,7 @@
                 </div>
             </div>
 
-            <div class="cartao" onclick="window.location.href='#'">
+            <div class="cartao" onclick="window.location.href='imovel.php'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -987,7 +987,7 @@
                 </div>
             </div>
 
-            <div class="cartao" onclick="window.location.href='#'">
+            <div class="cartao" onclick="window.location.href='imovel.php'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
@@ -1044,7 +1044,7 @@
                 </div>
             </div>
 
-            <div class="cartao" onclick="window.location.href='#'">
+            <div class="cartao" onclick="window.location.href='imovel.php'">
                 <div class="img">
                     <img class="img-fluid" src="./img/incorporacao/imovel.png" alt="Imóvel">
                 </div>
