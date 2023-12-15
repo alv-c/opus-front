@@ -1,5 +1,6 @@
 <?php require_once "./includes/navbar.php"; ?>
 <?php require_once "./includes/modal_video.php"; ?>
+<?php $pagina = 'conheca'; ?>
 
 <section class="conheca-primaria">
     <div class="container">

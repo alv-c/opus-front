@@ -1,4 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'revista-interna'; ?>
 
 <section class="revista-primaria">
     <div class="container">

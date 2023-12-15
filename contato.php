@@ -1,4 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'contato'; ?>
 <section>
     <div class="container">
         <div class="breadcrumb-inc">
@@ -53,6 +54,13 @@
                     </div>
                     <form action="#" method="post">
 
+                        <div class="contain-radios">
+                            <input type="radio" class="radio-contato" id="radio-left" name="departamento" value="vendas" checked>
+                            <label for="radio-left" class="label-radio-contato">Vendas</label>
+
+                            <input type="radio" class="radio-contato" id="radio-right" name="departamento" value="relacionamento">
+                            <label for="radio-right" class="label-radio-contato">Relacionamento</label>
+                        </div>
 
                         <input type="text" name="nome" class="input-trabalhe-cns" placeholder="Nome completo" required>
                         <input type="email" name="email" class="input-trabalhe-cns" placeholder="E-mail" required>

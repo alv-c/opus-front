@@ -2,6 +2,7 @@
 <?php require_once "./includes/modal_video.php"; ?>
 <?php require_once "./includes/modal_slick_inline.php"; ?>
 <?php require_once "./includes/modal_slick_inline_imgs.php"; ?>
+<?php $pagina = 'imovel'; ?>
 
 <section>
     <div class="container">

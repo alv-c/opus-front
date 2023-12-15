@@ -1,4 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'revista'; ?>
 
 <section class="revista-primaria">
     <div class="container">
@@ -67,7 +68,7 @@
         </div>
         
         <div class="contains">
-            <div class="grid">
+            <div class="grid" id="grid-cards-revista">
                 <!-- Attr data-year deve conter o attr em questão -> data-year -->
                 <div class="card-revista contain-filter contain-filter-conheca" data-year="sustentabilidade">
                     <div class="img">
@@ -128,7 +129,7 @@
         </div>
 
         <div class="contain-mais">
-            <button type="button" class="carregar-mais">Carregar mais</button>
+            <button type="button" class="carregar-mais" onclick="carregarMais('grid-cards-revista', 3)">Carregar mais</button>
         </div>
     </div>
 </section>

@@ -519,7 +519,9 @@
                 }
             })
 
+            <?php if($pagina == 'imovel') : ?>
             showChart()
+            <?php endif; ?>
             let itensChart = $('.item-chart')
             $("button.filtro-slick.dropdown-item").on('click', function() {
                 let filtro = $(this).data('filter');
@@ -533,9 +535,11 @@
             })
 
             // Filtra a primeira opção do dropdow sessao "estagio da obra" pagina imovel.php
+            <?php if($pagina == 'imovel') : ?>
             setTimeout(function() {
                 $("button.filtro-slick")[0].click()
             }, 1500);
+            <?php endif; ?>
         });
 
 

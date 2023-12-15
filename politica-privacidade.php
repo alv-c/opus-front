@@ -1,4 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'politica-privacidade'; ?>
 <section>
     <div class="container">
         <div class="breadcrumb-inc">

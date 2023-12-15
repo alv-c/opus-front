@@ -1474,6 +1474,10 @@ section.imoveis-filtros div.sessao-imoveis div.list {
 }
 section.imoveis-filtros div.sessao-imoveis div.list div.coluna-list {
   width: 100%;
+  display: none;
+}
+section.imoveis-filtros div.sessao-imoveis div.list div.coluna-list:nth-child(-n+6) {
+  display: block;
 }
 @media (min-width: 576px) {
   section.imoveis-filtros div.sessao-imoveis div.list div.coluna-list:nth-child(odd) {
@@ -3675,6 +3679,10 @@ section.revista-filtro div.contains div.grid {
 }
 section.revista-filtro div.contains div.grid div.card-revista {
   width: 100%;
+  display: none;
+}
+section.revista-filtro div.contains div.grid div.card-revista:nth-child(-n+4) {
+  display: block;
 }
 section.revista-filtro div.contains div.grid div.card-revista div.img img {
   object-fit: cover;
@@ -3880,6 +3888,7 @@ section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conos
   justify-content: flex-start;
   align-items: center;
   gap: 18px;
+  padding-bottom: 20px;
 }
 section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-titulo div.ico {
   position: relative;
@@ -3892,6 +3901,32 @@ section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conos
   font-style: normal;
   font-weight: 300;
   line-height: 38.4px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-radios {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 280px;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-radios label.label-radio-contato {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+  color: #A9A9A9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  border-bottom: 2px solid #B1B1B1;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-radios input.radio-contato {
+  display: none;
+}
+section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco div.contain-radios input.radio-contato:checked + label {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
 }
 section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco input.input-trabalhe-cns,
 section.contato-primaria div.grid div.right fieldset.contain-form-trabalhe-conosco textarea.input-trabalhe-cns {

@@ -35,6 +35,20 @@ $("button.btn-expand-search").click(function () {
     $('input.search-click').focus();
 });
 
+
+//CARREGAR MAIS ITENS
+let carregarMais = (id, num = 0) => {
+    let itens = document.getElementById(id).children 
+    let inicial = 0;
+    for(let i = 0; i < itens.length; i++) {
+        if (window.getComputedStyle(itens[i]).display == 'block') inicial += 1
+    }
+    inicial += num;
+    for(let i = 0; i < inicial; i++) {
+        if(itens[i] != undefined) itens[i].style.display = 'block';
+    }
+}
+
 //***************************** YOUTUBE MODAL *************************/
 var player
 var videoId

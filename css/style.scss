@@ -351,7 +351,7 @@ section {
                 }
 
                 @media (min-width: 768px) {
-                        gap: 65px 150px;
+                    gap: 65px 150px;
                 }
 
                 @media (min-width: 992px) {
@@ -792,6 +792,11 @@ section {
 
                     div.coluna-list {
                         width: 100%;
+                        display: none;
+                            
+                        &:nth-child( -n + 6 ) {
+                            display: block;
+                        }
 
                         @media (min-width: 576px) {
                             &:nth-child(odd) {
@@ -3089,6 +3094,11 @@ section {
 
                 div.card-revista {
                     width: 100%;
+                    display: none;
+
+                    &:nth-child( -n + 4 ) {
+                        display: block;
+                    }
 
                     div {
                         &.img {
@@ -3327,11 +3337,12 @@ section {
 
                     fieldset.contain-form-trabalhe-conosco {
                         div.contain-titulo {
-                             display: flex;
+                            display: flex;
                             flex-wrap: nowrap;
                             justify-content: flex-start;
                             align-items: center;
                             gap: 18px;
+                            padding-bottom: 20px ;
 
                             div.ico {
                                 position: relative;
@@ -3345,6 +3356,37 @@ section {
                                 font-style: normal;
                                 font-weight: 300;
                                 line-height: 38.4px;
+                            }
+                        }
+
+                        div.contain-radios {
+                            // border: 2px solid lime;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            width: 100%;
+                            max-width: 280px;
+
+                            label.label-radio-contato {
+                                display: block;
+                                width: 100%;
+                                text-align: center;
+                                padding: 13px 0;
+                                color: #A9A9A9;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 15px;
+                                border-bottom: 2px solid #B1B1B1;
+                            }
+
+                            input.radio-contato {
+                                display: none;
+                            }
+
+                            & input.radio-contato:checked + label {
+                                color: #000;
+                                font-weight: 600;
+                                border-bottom: 2px solid #000;
                             }
                         }
 

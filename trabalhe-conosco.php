@@ -1,4 +1,6 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'trabalhe-conosco'; ?>
+
 <section>
     <div class="container">
         <div class="breadcrumb-inc">

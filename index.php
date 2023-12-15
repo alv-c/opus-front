@@ -1,4 +1,5 @@
 <?php require_once "./includes/navbar.php"; ?>
+<?php $pagina = 'index'; ?>
     <section class="redirecionamento">
         <div class="container">
             <div class="row no-margin-padding">
