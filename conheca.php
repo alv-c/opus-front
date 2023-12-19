@@ -1,6 +1,6 @@
 <?php require_once "./includes/navbar.php"; ?>
 <?php require_once "./includes/modal_video.php"; ?>
-<?php $pagina = 'conheca'; ?>
+ 
 
 <section class="conheca-primaria">
     <div class="container">
@@ -63,7 +63,7 @@
                     <a href="politica-privacidade.php">Política de privacidade</a>
                 </div>
                 <div class="contain-media">
-                    <button type="button" class="btn-media" onclick="iniciarModalYt('https://www.youtube.com/watch?v=1HN6bhAmQMc')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
+                    <button type="button" class="btn-media ico-play" onclick="iniciarModalYt('https://www.youtube.com/watch?v=1HN6bhAmQMc')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
                         <img class="d-block mx-auto" src="./img/conheca/media.png" alt="Imóvel Opus">
                     </button>
                 </div>

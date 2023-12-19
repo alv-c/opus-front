@@ -52,22 +52,21 @@
                         </div>
                         <span>Contato por e-mail</span>
                     </div>
-                    <form action="#" method="post">
 
-                        <div class="contain-radios">
-                            <input type="radio" class="radio-contato" id="radio-left" name="departamento" value="vendas" checked>
-                            <label for="radio-left" class="label-radio-contato">Vendas</label>
+                    <div class="contain-radios">
+                        <input type="radio" class="radio-contato" onclick="alterarFormCont('form-vendas')" id="radio-left" name="departamento" value="vendas" checked>
+                        <label for="radio-left" class="label-radio-contato">Vendas</label>
 
-                            <input type="radio" class="radio-contato" id="radio-right" name="departamento" value="relacionamento">
-                            <label for="radio-right" class="label-radio-contato">Relacionamento</label>
-                        </div>
+                        <input type="radio" class="radio-contato"  onclick="alterarFormCont('form-relacionamento')" id="radio-right" name="departamento" value="relacionamento">
+                        <label for="radio-right" class="label-radio-contato">Relacionamento</label>
+                    </div>
 
+                    <!-- FORM VENDAS -->
+                    <form action="#" method="post" id="form-vendas">
                         <input type="text" name="nome" class="input-trabalhe-cns" placeholder="Nome completo" required>
                         <input type="email" name="email" class="input-trabalhe-cns" placeholder="E-mail" required>
                         <input type="text" name="telefone" class="input-trabalhe-cns" placeholder="Telefone" required>
-
                         <textarea name="mensagem" class="input-trabalhe-cns" placeholder="Deixa uma mensagem" required rows="3"></textarea>
-                        
                         <div class="contain-input-termo">
                             <div class="input">
                                 <div class="custom-control custom-checkbox my-1 mr-sm-2">
@@ -76,12 +75,31 @@
                                 </div>
                             </div>                            
                         </div>
-
                         <div class="contain-btn-submit">
                             <button type="submit" class="submit-trabalhe-cns">Enviar mensagem</button>
                         </div>
-
                     </form>
+
+                    <!-- FORM RELACIONAMENTO -->
+                    <form action="#" method="post" id="form-relacionamento" class="d-none">
+                        <input type="text" name="nome" class="input-trabalhe-cns" placeholder="Nome completo" required>
+                        <input type="email" name="email" class="input-trabalhe-cns" placeholder="E-mail" required>
+                        <input type="text" name="telefone" class="input-trabalhe-cns" placeholder="Telefone" required>
+                        <textarea name="mensagem" class="input-trabalhe-cns" placeholder="Deixa uma mensagem" required rows="3"></textarea>
+                        <div class="contain-input-termo">
+                            <div class="input">
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                    <label class="custom-control-label" for="customControlInline">Declaro que li e estou de acordo com os termos da política de privacidade.</label>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="contain-btn-submit">
+                            <button type="submit" class="submit-trabalhe-cns">Enviar mensagem</button>
+                        </div>
+                    </form>
+
+
                 </fieldset>
             </div>
         </div>

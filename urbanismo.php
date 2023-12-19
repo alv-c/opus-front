@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="contain-media-urbanismo">
-            <button type="button" class="btn-media" onclick="iniciarModalYt('https://www.youtube.com/watch?v=TwTYv1RXE90&list=RDKaty60hSU3c&index=5')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
+            <button type="button" class="btn-media ico-play" onclick="iniciarModalYt('https://www.youtube.com/watch?v=TwTYv1RXE90&list=RDKaty60hSU3c&index=5')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
                 <!-- IMAGEM DESKTOP -->
                 <img class="mx-auto desktop" src="./img/urbanismo/media_lg.png" alt="Imóvel Opus">
                 <!-- IMAGEM MOBILLE E TABLET -->

@@ -881,7 +881,7 @@ section {
                         max-width: 900px;
                     }
 
-                    &::after {
+                    &.ico-play::after {
                         content: '';
                         position: absolute;
                         top: 0;
@@ -1218,7 +1218,7 @@ section {
             }
 
             &.right {
-                button {
+                button.btn-media {
                     display: block;
                     width: 100%;
                     max-width: 590px;
@@ -1238,7 +1238,7 @@ section {
                         margin: 0 0 0 auto;
                     }
 
-                    &::after {
+                    &.ico-play::after {
                         content: '';
                         position: absolute;
                         top: 0;
@@ -2329,7 +2329,7 @@ section {
                                 padding: 0;
                                 position: relative;
 
-                                &::after {
+                                &.ico-play::after {
                                     content: '';
                                     position: absolute;
                                     top: 0;
@@ -2894,7 +2894,7 @@ section {
                     padding: 0;
                     position: relative;
 
-                    &::after {
+                    &.ico-play::after {
                         content: '';
                         position: absolute;
                         top: 0;

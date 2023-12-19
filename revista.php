@@ -129,7 +129,7 @@
         </div>
 
         <div class="contain-mais">
-            <button type="button" class="carregar-mais" onclick="carregarMais('grid-cards-revista', 3)">Carregar mais</button>
+            <button type="button" class="carregar-mais">Carregar mais</button>
         </div>
     </div>
 </section>

@@ -24,7 +24,7 @@
     <div class="row no-margin-padding row-imovel-primaria">
         <div class="col-lg-6 col-md-12 col-sm-12 no-margin-padding col-imovel-primaria">
             <div class="media">
-                <button type="button" class="btn-media" onclick="iniciarModalYt('https://www.youtube.com/watch?v=RqlvAIlAwmw&t=7s')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
+                <button type="button" class="btn-media ico-play" onclick="iniciarModalYt('https://www.youtube.com/watch?v=RqlvAIlAwmw&t=7s')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
                     <img class="d-block mx-auto" src="./img/imovel/imovel.png" alt="Imóvel Opus">
                 </button>
             </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-lg-6 no-margin-padding">
                 <div class="right">
-                    <button type="button" class="btn-media" onclick="iniciarModalYt('https://www.youtube.com/watch?v=1HN6bhAmQMc')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
+                    <button type="button" class="btn-media ico-play" onclick="iniciarModalYt('https://www.youtube.com/watch?v=1HN6bhAmQMc')" data-bs-toggle="modal" data-bs-target="#dynamicVideoModal">
                         <img class="d-block mx-auto" src="./img/imovel/loca.png" alt="Imóvel Opus">
                     </button>
                 </div>

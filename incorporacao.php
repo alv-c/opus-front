@@ -675,7 +675,7 @@
                 </div>
             </div>
             <div class="contain-btn-carregar-mais">
-                <button type="button" class="carregar-mais" onclick="carregarMais('sessao-imoveis-1', 3)">Carregar mais</button>
+                <button type="button" class="carregar-mais">Carregar mais</button>
             </div>
         </div>
         <div class="sessao-imoveis">
@@ -915,7 +915,7 @@
                 </div>
             </div>
             <div class="contain-btn-carregar-mais">
-                <button type="button" class="carregar-mais" onclick="carregarMais('sessao-imoveis-2', 3)">Carregar mais</button>
+                <button type="button" class="carregar-mais">Carregar mais</button>
             </div>
         </div>
     </div>

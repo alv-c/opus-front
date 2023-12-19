@@ -18,7 +18,7 @@
 }
 
 * {
-  font-family: grotesk !important;
+  font-family: grotesk, sans-serif !important;
 }
 
 .no-margin-padding {
@@ -1673,7 +1673,7 @@ section.imovel-primaria div.row-imovel-primaria div.media button.btn-media {
     max-width: 900px;
   }
 }
-section.imovel-primaria div.row-imovel-primaria div.media button.btn-media::after {
+section.imovel-primaria div.row-imovel-primaria div.media button.btn-media.ico-play::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1683,7 +1683,7 @@ section.imovel-primaria div.row-imovel-primaria div.media button.btn-media::afte
   height: 100%;
 }
 @media (max-width: 767.9px) {
-  section.imovel-primaria div.row-imovel-primaria div.media button.btn-media::after {
+  section.imovel-primaria div.row-imovel-primaria div.media button.btn-media.ico-play::after {
     background-size: 85px;
   }
 }
@@ -1988,7 +1988,7 @@ section.imovel-localizacao div.left div.bottom div.contain-btn button.rota {
   outline: none;
   cursor: pointer;
 }
-section.imovel-localizacao div.right button {
+section.imovel-localizacao div.right button.btn-media {
   display: block;
   width: 100%;
   max-width: 590px;
@@ -2001,16 +2001,16 @@ section.imovel-localizacao div.right button {
   margin: 50px auto 0;
 }
 @media (min-width: 576px) {
-  section.imovel-localizacao div.right button {
+  section.imovel-localizacao div.right button.btn-media {
     margin: 70px auto 0;
   }
 }
 @media (min-width: 1200px) {
-  section.imovel-localizacao div.right button {
+  section.imovel-localizacao div.right button.btn-media {
     margin: 0 0 0 auto;
   }
 }
-section.imovel-localizacao div.right button::after {
+section.imovel-localizacao div.right button.btn-media.ico-play::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2020,11 +2020,11 @@ section.imovel-localizacao div.right button::after {
   height: 100%;
 }
 @media (max-width: 767.9px) {
-  section.imovel-localizacao div.right button::after {
+  section.imovel-localizacao div.right button.btn-media.ico-play::after {
     background-size: 85px;
   }
 }
-section.imovel-localizacao div.right button img {
+section.imovel-localizacao div.right button.btn-media img {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -3078,7 +3078,7 @@ section.conheca-sobre div.grid div.right div.contain-media button.btn-media {
   padding: 0;
   position: relative;
 }
-section.conheca-sobre div.grid div.right div.contain-media button.btn-media::after {
+section.conheca-sobre div.grid div.right div.contain-media button.btn-media.ico-play::after {
   content: "";
   position: absolute;
   top: 0;
@@ -3088,7 +3088,7 @@ section.conheca-sobre div.grid div.right div.contain-media button.btn-media::aft
   height: 100%;
 }
 @media (max-width: 767.9px) {
-  section.conheca-sobre div.grid div.right div.contain-media button.btn-media::after {
+  section.conheca-sobre div.grid div.right div.contain-media button.btn-media.ico-play::after {
     background-size: 85px;
   }
 }
@@ -3561,7 +3561,7 @@ section.urbanismo-info div.contain-media-urbanismo button.btn-media {
   padding: 0;
   position: relative;
 }
-section.urbanismo-info div.contain-media-urbanismo button.btn-media::after {
+section.urbanismo-info div.contain-media-urbanismo button.btn-media.ico-play::after {
   content: "";
   position: absolute;
   top: 0;
@@ -3571,7 +3571,7 @@ section.urbanismo-info div.contain-media-urbanismo button.btn-media::after {
   height: 100%;
 }
 @media (max-width: 767.9px) {
-  section.urbanismo-info div.contain-media-urbanismo button.btn-media::after {
+  section.urbanismo-info div.contain-media-urbanismo button.btn-media.ico-play::after {
     background-size: 85px;
   }
 }
